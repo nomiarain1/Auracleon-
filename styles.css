@@ -174,7 +174,7 @@ justify-self: start;
 .carousel-track img {
   height: 80px;
   object-fit: contain;
-  filter: brightness(0) invert(1); /* make logo white */
+  
   padding: 20px 40px; /* space inside box */
   border-left: 1px solid #fff;
   border-right: 1px solid #fff;
@@ -1096,3 +1096,4 @@ div#navbarContent {
 ul.nav-links.navbar-nav.ms-auto.mb-2.mb-lg-0 {
     margin-right: 400px;
 }
+
