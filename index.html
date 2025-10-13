@@ -51,8 +51,8 @@
   </header>
 
   <!-- Hero Section -->
-  <section class="hero">
-  <div class="container">
+  <section class="hero ">
+  <div class="container container1 fade-up-on-scroll">
     <div class="row">
       
       <!-- Left Column -->
@@ -100,7 +100,7 @@
 </section>
 
 <!-- Info Section -->
-<section class="info">
+<section class="info fade-up-on-scroll">
   <div class="container ">
     <div class="col-12 col-xl-12 row">
       
@@ -174,7 +174,7 @@ At Auracleon, we envision a world where every business challenge becomes an oppo
 </section>
 
 <!-- Services Section -->
- <section class="services">
+ <section class="services fade-up-on-scroll">
   <div class="container">
     <div class="row align-items-center">
 <div class="col-lg-12 services-left">
@@ -214,37 +214,72 @@ At Auracleon, we envision a world where every business challenge becomes an oppo
       </div>
   </div>
  </section>
-<section class="services">
+<section class="services fade-up-on-scroll">
   <div class="container con1">
-    <div class="row align-items-center">
+    <div class="row">
 
       <!-- Left Column -->
       <div class="col-lg-3 left-section">
-        <ul class="service-list">
-          <li class="sub-heading">E-commerce </li>
-          <li>Financial Services</li>
-          <li>Sports & Tourism</li>
-          <li>Healthcare</li>
+        <ul class="service-list" id="serviceTabs">
+          <li class="sub-heading active" data-tab="ecommerce">E-commerce</li>
+          <li data-tab="finance">Financial Services</li>
+          <li data-tab="sports">Sports & Tourism</li>
+          <li data-tab="health">Healthcare</li>
         </ul>
       </div>
 
-      <!-- Middle Column (Image) -->
-     
       <!-- Right Column -->
       <div class="col-lg-8 services-right right-section">
-        <p>
-          Through our E-commerce solutions, we empower retailers and brands to create seamless online experiences that drive engagement and conversion.
-        </p>
-        <a href="#" class="services-btn">
-          Read More
-          <img class="btn-icon" src="./assets/arrow-right-double (1).svg" alt="">
-        </a>
+
+        <!-- E-commerce -->
+        <div class="service-content active" id="ecommerce">
+          <p>
+            Through our E-commerce solutions, we empower retailers and brands to create seamless online experiences that drive engagement and conversion.
+          </p>
+          <a href="#" class="services-btn">
+            Read More
+            <img class="btn-icon" src="./assets/arrow-right-double (1).svg" alt="">
+          </a>
+        </div>
+
+        <!-- Financial Services -->
+        <div class="service-content" id="finance">
+          <p>
+            We develop digital platforms that streamline transactions, enhance user trust, and drive financial inclusion through innovation and security.
+          </p>
+          <a href="#" class="services-btn">
+            Read More
+            <img class="btn-icon" src="./assets/arrow-right-double (1).svg" alt="">
+          </a>
+        </div>
+
+        <!-- Sports & Tourism -->
+        <div class="service-content" id="sports">
+          <p>
+            Our sports and tourism tech solutions connect fans and travelers through personalized, immersive digital experiences.
+          </p>
+          <a href="#" class="services-btn">
+            Read More
+            <img class="btn-icon" src="./assets/arrow-right-double (1).svg" alt="">
+          </a>
+        </div>
+
+        <!-- Healthcare -->
+        <div class="service-content" id="health">
+          <p>
+            We innovate healthcare systems by enabling smarter patient management, predictive insights, and digital care solutions.
+          </p>
+          <a href="#" class="services-btn">
+            Read More
+            <img class="btn-icon" src="./assets/arrow-right-double (1).svg" alt="">
+          </a>
+        </div>
       </div>
     </div>
   </div>
 </section>
 <!-- CTA Section -->
-<section class="cta-section text-center d-flex flex-column justify-content-center align-items-center">
+<section class="cta-section text-center d-flex flex-column justify-content-center align-items-center fade-up-on-scroll">
   <div class="container">
     <h2 class="cta-heading">
       Ask us how we can benefit <br> your business.
@@ -256,7 +291,7 @@ At Auracleon, we envision a world where every business challenge becomes an oppo
   </div>
 </section>
 
-<section class="contact-section py-5">
+<section class="contact-section py-5 fade-up-on-scroll">
   <div class="container">
     <div class="row">
       
@@ -288,7 +323,7 @@ At Auracleon, we envision a world where every business challenge becomes an oppo
 
 
 <section>
-  <div class="container">
+  <div class="container fade-up-on-scroll">
   <div class="row">
     <div class="col-md-5 m contact-left1 ">
     <!-- Left Column -->
@@ -346,10 +381,10 @@ Fill out the form below, and one of our specialists will get in touch to discuss
 </section>
 
 <!-- CTA Section -->
-<section class="cta-section text-center d-flex flex-column justify-content-center align-items-center">
+<section class="cta-section text-center d-flex flex-column justify-content-center align-items-center fade-up-on-scroll">
   <div class="container">
     <h2 class="cta-heading">
-      Become a part of the new <br> big thing!
+      Become a part of the new <br> big thing!
     </h2>
     <a href="#" class="btn btn-primary btn-lg mt-4">
       Join Our Team
@@ -415,27 +450,89 @@ Fill out the form below, and one of our specialists will get in touch to discuss
   <script>
     const input = document.querySelector("#phone");
     window.intlTelInput(input, {
-      initialCountry: "jo", // Default Jordan
+      initialCountry: "ae", // Default Jordan
       preferredCountries: ["jo", "sa", "ae", "us", "gb", "in"],
       separateDialCode: true, // ✅ Show country code next to flag
       utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/18.2.1/js/utils.js"
     });
+
+     const circle = document.querySelector('.circle');
+  let timer2;
+
+  // jab mouse move kare — active effect
+  window.addEventListener('mousemove', () => {
+    circle.style.transform = 'scale(1.05)';
+    circle.style.transition = 'transform 0.3s ease-out';
+
+    // agar movement continue ho to timer reset karte raho
+    clearTimeout(timer2);
+
+    // jab movement ruk jaaye — normal state me wapas
+    timer2 = setTimeout(() => {
+      circle.style.transform = 'scale(1)';
+    }, 200);
+  });
+
+   const fadeEls = document.querySelectorAll('.fade-up-on-scroll');
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('show');
+        // Optional: once visible, stop observing (so it doesn’t re-animate)
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.2 }); // 0.2 means 20% visible triggers the animation
+
+  fadeEls.forEach(el => observer.observe(el));
   </script>
+<script>
+ 
+</script>
+<script>
+  const diamond = document.querySelector('.diamond-circle');
+  let timer;
+
+  // jab mouse move kare
+  window.addEventListener('mousemove', () => {
+    // jab movement detect ho — popup / active effect
+    diamond.style.transform = 'scale(1.05)';
+    diamond.style.transition = 'transform 0.3s ease-out';
+
+    // agar pehle se timer chal raha ho to reset karo
+    clearTimeout(timer);
+
+    // agar movement ruk jaaye (200ms tak koi move nahi), to normal position par wapas le aao
+    timer = setTimeout(() => {
+      diamond.style.transform = 'scale(1)';
+    }, 200);
+  });
+</script>
+<script>
+ 
+</script>
+
+
+<script>
+  const tabs = document.querySelectorAll('#serviceTabs li');
+  const contents = document.querySelectorAll('.service-content');
+
+  tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      // remove active class from all tabs
+      tabs.forEach(t => t.classList.remove('active'));
+      // hide all content
+      contents.forEach(c => c.classList.remove('active'));
+
+      // add active class to clicked tab
+      tab.classList.add('active');
+      const target = document.getElementById(tab.dataset.tab);
+      target.classList.add('active');
+    });
+  });
+</script>
 
 </body>
 
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
