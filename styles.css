@@ -233,7 +233,7 @@ justify-self: start;
 /* Info Section */
 /* Info Section */
 .info {
-  background-color: #00B2E9;
+  
   color: #fff;
   padding: 100px 0;
 }
@@ -1207,6 +1207,7 @@ ul.nav-links.navbar-nav.ms-auto.mb-2.mb-lg-0 {
   from { opacity: 0; transform: translateY(10px); }
   to { opacity: 1; transform: translateY(0); }
 }
+
 
 
 
