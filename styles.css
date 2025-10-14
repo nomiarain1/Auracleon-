@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: 'Montns-serif;
+  font-family: 'Montserrat', sans-serif;
   color: #fff;
   overflow-x: hidden;
 }
@@ -168,7 +168,7 @@ justify-self: start;
 }
 
 .hero-right img {
-  max-width: 80%;
+  max-width: 70%;
   height: auto;
 }
 
@@ -1207,6 +1207,7 @@ ul.nav-links.navbar-nav.ms-auto.mb-2.mb-lg-0 {
   from { opacity: 0; transform: translateY(10px); }
   to { opacity: 1; transform: translateY(0); }
 }
+
 
 
 
