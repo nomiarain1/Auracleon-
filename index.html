@@ -26,7 +26,7 @@
   <!-- Navbar -->
    <!-- Navbar -->
   <header class="navbar navbar-expand-lg">
-    <div class="container-fluid">
+    <div class="container-fluid nav-container">
       <div class="logo">
         <img src="./assets/Logo.png" alt="Auracleon Logo">
       </div>
@@ -38,15 +38,11 @@
 
       <div class="collapse navbar-collapse align-items-center" id="navbarContent">
         <ul class="nav-links navbar-nav ms-auto mb-2 mb-lg-0">
-          <li class="nav-item"><a href="#" class="nav-link active">Home</a></li>
+          <li class="nav-item"><a href="./index.html" class="nav-link active">Home</a></li>
           <li class="nav-item"><a href="#" class="nav-link">About</a></li>
           <li class="nav-item"><a href="#" class="nav-link">Services</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">Our Team</a></li>
+          <li class="nav-item"><a href="./our_team.html" class="nav-link">Our Team</a></li>
         </ul>
-       <!--- <a href="#" class="btn-outline ms-lg-3 mt-2 mt-lg-0">
-          Get a Free Consultation 
-          <img class="btn-icon" src="./assets/arrow-right-double-1.svg" alt="">
-        </a>----->
       </div>
     </div>
   </header>
@@ -146,15 +142,19 @@ Our focus is on delivering measurable outcomes — empowering businesses to oper
       <!-- Right Column (Optional Image) -->
       <div class="col info-right">
         <div class="d-flex justify-content-center align-items-center">
-       <div class="circle">
-    <div class="grid">
-      <script>
-        for (let i = 0; i < 144; i++) {
-          document.write('<div class="dot"></div>');
-        }
-      </script>
-    </div>
-  </div>
+   <div class="circle">
+  <div class="grid" id="grid"></div>
+</div>
+
+
+<script>
+  const grid = document.getElementById('grid');
+  for (let i = 0; i < 144; i++) {
+    const dot = document.createElement('div');
+    dot.className = 'dot';
+    grid.appendChild(dot);
+  }
+</script>
         </div>
          <h2>Our Mission  </h2>
         <p>
