@@ -10,18 +10,36 @@ body {
   overflow-x: hidden;
 }
 
-
+.header {
+    width: 1440px;
+    margin: 0 auto; /* Center header on screen */
+    display: flex;
+    justify-content: space-between; /* Space between logo and nav */
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #0f0f1a;
+    color: white;
+  
+}
+.nav {
+  width: 1440px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Move menu items to end */
+    gap: 30px;
+}
 /* Navbar Customization */
 .navbar {
-  padding: 20px 60px;
-  position: absolute;
+  background-color:#1D2041;
   width: 100%;
   top: 0;
   left: 0;
-  z-index: 10;
+
 }
 
-
+.nav-container{
+  width: 1440px;
+}
 .nav-links {
   list-style: none;
   display: flex;
@@ -107,20 +125,9 @@ body {
   align-items: center;
   background-color: #1D2041;
   color: #fff;
-  position: relative; /* navbar space */
-}
-.container1 {
-  opacity: 0;
-  transform: translateY(40px);
-  animation: heroLoad 1s ease-out forwards;
+  /* navbar space */
 }
 
-@keyframes heroLoad {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
 
 .hero-left {
   display: flex;
@@ -145,7 +152,7 @@ body {
 .hero-left {
   display: flex;
   flex-direction: column;
-  backgrount-color:#1D2041;
+  background-color:#1D2041;
   align-items: flex-start; /* left align */
   justify-content: flex-start; /* 👈 dono ko upar le aayega */
   padding-top: 200px; /* navbar ke liye space */
@@ -204,31 +211,6 @@ justify-self: start;
   100% { transform: translateX(-50%); }
 }
 
-.info-left {
-  opacity: 0;
-  transform: translateY(40px);
-  animation: aboutLoad 1s ease-out forwards 0.8s; /* thoda delay for sequence */
-}
-
-@keyframes aboutLoad {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.info-right {
-  opacity: 0;
-  transform: translateY(40px);
-  animation: infoLoad 1s ease-out forwards 1s; /* thoda delay for sequence */
-}
-
-@keyframes infoLoad {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
 
 /* Info Section */
 /* Info Section */
@@ -311,9 +293,7 @@ justify-self: start;
   margin-bottom:00px;
   border-radius: 8px;
 }
-.l-img {
- /* background: #00aeea;  blue background */
-}
+
 
 .circle {
   background: #1d1e3c; /* dark navy circle */
@@ -575,12 +555,15 @@ justify-self: start;
 
 /* CTA Section */
 .cta-section {
-  height: 600px;
+  position: relative; /* z-index kaam karne ke liye zaroori */
+  z-index: 2; /* 👈 section ko upar laane ke liye (increase if needed) */
+
+  height: 700px;
   background-image: url('./assets/bg.png');
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-color: transparent; /* force no blue */
+  background-size:cover;
+  background-position: center;/* optional fallback color */
+  overflow: hidden; /* image overflow se bachane ke liye */
 }
 
 
@@ -885,7 +868,6 @@ a.info-btn-outline1 {
     justify-content: center;
   }
 .hero-left {
-
     flex-direction: column; 
     align-items: flex-start;
     justify-content: flex-start;
@@ -1181,10 +1163,7 @@ ul.nav-links.navbar-nav.ms-auto.mb-2.mb-lg-0 {
 }
 
 }
-ul.nav-links.navbar-nav.ms-auto.mb-2.mb-lg-0 {
-    margin-right: 400px;
-   
-}
+
 
 .service-list li.active {
   color: #00B2E9;       /* highlight color */
