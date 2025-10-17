@@ -170,7 +170,7 @@ justify-self: start;
 
 .hero-right {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
 }
 
@@ -862,6 +862,7 @@ a.info-btn-outline1 {
   }
   .navbar{
     padding: 0 !important;
+    z-index: 99;
   }
   .btn-outline {
     width: 100%;
@@ -1161,7 +1162,18 @@ ul.nav-links.navbar-nav.ms-auto.mb-2.mb-lg-0 {
     margin-right: 10px !important;
     text-align: center;
 }
-
+.col.team_hero-right {
+    margin-top: -174px;
+    margin-left: 20px;
+    z-index: -1;
+    transform: rotate(-79deg);
+}
+.col.team_hero-left {
+    margin-top: 50px !important;
+}
+.hero-bottom p{
+  text-align: center !important;
+}
 }
 
 
@@ -1187,10 +1199,115 @@ ul.nav-links.navbar-nav.ms-auto.mb-2.mb-lg-0 {
   to { opacity: 1; transform: translateY(0); }
 }
 
+div#navbarContent {
+    z-index: 99;
+}
+.col.team_hero-right {
+    margin-top: -138px;
+}
+.team_hero{
+        background-color: #1D2041;
+        height: 500px;
+    }
+    .col.team_hero-left {
+    margin-top: 120px;
+
+}
+
+.upload-box {
+  border: 2px dashed #ccc;
+  border-radius: 10px;
+  text-align: center;
+  padding: 40px;
+  cursor: pointer;
+  transition: border-color 0.3s;
+  background-color: #f9f9f9;
+}
+.upload-box:hover {
+  border-color: #0056b3;
+}
+.upload-box input[type="file"] {
+  display: none;
+}
+.upload-text {
+  color: #666;
+  font-size: 15px;
+}
+.upload-box .browse-btn {
+  display: inline-block;
+  margin-top: 10px;
+  background-color: #001F5B;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  border: none;
+}
+.upload-box .browse-btn:hover {
+  background-color: #003399;
+}
 
 
 
+/* service page */
 
 
 
+.industry-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f9fbff;
+  border-radius: 16px;
+  padding: 25px;
+  height: 130px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+}
+.industry-card:hover {
+  transform: translateY(-5px);
+}
 
+.card-text {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  color: #0b1532;
+  font-size: 1.05rem;
+  width: 60%;
+}
+
+/* dot pattern container (smaller size) */
+.pattern-container {
+  width: 65px;
+  height: 65px;
+  display: grid;
+  place-items: center;
+}
+
+/* grid of dots */
+.pattern-grid {
+  display: grid;
+  grid-template-columns: repeat(13, 1fr);
+  grid-gap: 3px;
+  justify-items: center;
+  align-items: center;
+}
+
+/* dots themselves */
+.pattern-dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 30% 30%, #00f, #001dff, #000);
+  transform: scale(0);
+  opacity: 0;
+  animation: dotPulse 2.2s infinite ease-in-out;
+}
+
+@keyframes dotPulse {
+  0%   { transform: scale(0); opacity: 0; }
+  45%  { transform: scale(1); opacity: 1; }
+  55%  { transform: scale(1); opacity: 1; }
+  100% { transform: scale(0); opacity: 0; }
+}
