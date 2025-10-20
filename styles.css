@@ -1,3 +1,19 @@
+Conversation opened. 1 unread message.
+
+Skip to content
+Using Gmail with screen readers
+1 of 608
+services page
+Inbox
+
+Shahzaib arain
+Attachments
+Mon 20 Oct, 17:21 (7 hours ago)
+to me
+
+
+ 2 attachment
+  •  Scanned by Gmail
 * {
   margin: 0;
   padding: 0;
@@ -1174,6 +1190,24 @@ ul.nav-links.navbar-nav.ms-auto.mb-2.mb-lg-0 {
 .hero-bottom p{
   text-align: center !important;
 }
+.finance-section {
+   padding: 25px 10px !important;
+  
+}
+.finance-section h2 {
+    font-size: 38px !important;
+    line-height: 42px !important;
+    font-weight: bold;
+}
+.finance-section p {
+    font-size: 18px !important;
+    line-height: 24px !important;
+  
+}
+.finance-section ul li {
+       font-size: 18px !important;
+  line-height: 24px !important ;
+    }
 }
 
 
@@ -1252,62 +1286,84 @@ div#navbarContent {
 
 /* service page */
 
-
+    .industries-section {
+  padding: 60px 0;
+}
 
 .industry-card {
+  background: #F7F9FF;
+  border: 1px solid #e5e5e5;
+  border-radius: 15px;
+  padding: 25px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #f9fbff;
-  border-radius: 16px;
-  padding: 25px;
-  height: 130px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-  transition: all 0.3s ease;
+  transition: 0.3s;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  margin-bottom: 20px;
+  min-height: 180px;
 }
+
+/* .industry-card img {
+  width: 100px;
+  height: 100px;
+} */
+
+.industry-card h4 {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0;
+  color: #1a1a1a;
+}
+
 .industry-card:hover {
   transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
 }
-
-.card-text {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 600;
-  color: #0b1532;
-  font-size: 1.05rem;
-  width: 60%;
-}
-
-/* dot pattern container (smaller size) */
-.pattern-container {
-  width: 65px;
-  height: 65px;
-  display: grid;
-  place-items: center;
-}
-
-/* grid of dots */
-.pattern-grid {
-  display: grid;
-  grid-template-columns: repeat(13, 1fr);
-  grid-gap: 3px;
-  justify-items: center;
-  align-items: center;
-}
-
-/* dots themselves */
-.pattern-dot {
-  width: 5px;
-  height: 5px;
-  border-radius: 50%;
-  background: radial-gradient(circle at 30% 30%, #00f, #001dff, #000);
-  transform: scale(0);
+.fade-up {
   opacity: 0;
-  animation: dotPulse 2.2s infinite ease-in-out;
+  transform: translateY(30px);
+  transition: all 0.8s ease-out;
 }
 
-@keyframes dotPulse {
-  0%   { transform: scale(0); opacity: 0; }
-  45%  { transform: scale(1); opacity: 1; }
-  55%  { transform: scale(1); opacity: 1; }
-  100% { transform: scale(0); opacity: 0; }
+.fade-up.show {
+  opacity: 1;
+  transform: translateY(0);
 }
+.finance-section {
+      background-color: #2d3571;
+      color: white;
+      padding: 60px 30px;
+      border-bottom: 1px solid #fff;
+      
+    }
+
+.finance-section h2 {
+      font-size: 64px;
+      line-height: 70px;
+      font-weight: bold;
+    }
+.finance-section p{
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.finance-section img {
+      max-width: 100%;
+      border-radius: 16px;      
+     border: 20px solid rgba(255, 255, 255, 0.2);
+
+    }
+
+.finance-section ul {
+      margin-top: 15px;
+    }
+
+.finance-section ul li {
+      margin-bottom: 8px;
+       font-size: 24px;
+  line-height: 36px;
+    }
+    
+styles.css
+Displaying styles.css.
