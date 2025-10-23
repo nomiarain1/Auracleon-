@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Auracleon Landing</title>
+  <!-- Google Font: Montserrat -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/css/intlTelInput.min.css" />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap CSS (optional) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- intl-tel-input CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/18.2.1/css/intlTelInput.css">
+<!-- Bootstrap JS (with Popper) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <link rel="stylesheet" href="styles.css">
+<style>
+    .testimonials {
+  background-image: url('./assets/mbg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 120px 20px;
+  color: white;
+  text-align: center;
+  position: relative;
+  font-family: Arial, sans-serif;
+}
+
+
+.testimonials h3 {
+  font-size: 20px;
+ font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.testimonials h2 {
+  font-size: 60px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.testimonial-box {
+  max-width: 600px;
+  margin: 0 auto;
+}
+.carousel { position: relative; max-width: 700px; margin: auto; }
+.slide { display: none; }
+.slide.active { display: block; animation: fade 0.6s; }
+
+@keyframes fade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.client-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.position { opacity: 0.8; font-size: 16px; }
+.message { 
+    font-size: 26px;
+
+     margin-top: 10px; }
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  padding: 10px 16px;
+  border: none;
+  background: white;
+  color: black;
+  border-radius: 50%;
+  transform: translateY(-50%);
+}
+
+.prev { left: 15%; }
+.next { right: 15%; }
+
+.user-name{
+    font-size: 18px;
+    font-weight: 500;
+}
+/* ====== Solutions Section ====== */
+.solutions-section {
+  width: 100%;
+  background-color: #fff;
+  padding: 80px 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.solutions-section .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+/* Left Graphic */
+.left-graphic {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.left-graphic img {
+  max-width: 100%;
+  width: 500px;
+  height: auto;
+}
+
+/* Right Content */
+.right-content {
+  flex: 1.2;
+}
+
+.right-content .sol-heading {
+  color: #0c0f2d;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+
+.right-content p {
+  color: #4a4a4a;
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+
+/* Tags */
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 25px;
+}
+
+.tags span {
+  background-color: #0095ff;
+  color: #fff;
+  padding: 10px 18px;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.tags span:hover {
+  background-color: #0077cc;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 992px) {
+  .solutions-section .container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .right-content .sol-heading {
+    font-size: 28px;
+  }
+  .left-graphic img {
+    width: 350px;
+  }
+}
+
+@media (max-width: 768px) {
+  .right-content .sol-heading {
+    font-size: 24px;
+  }
+  .right-content p {
+    font-size: 14px;
+  }
+  .tags {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .right-content .sol-heading {
+    font-size: 20px;
+  }
+  .left-graphic img {
+    width: 280px;
+  }
+}
+
+/* ====== Vision & Mission Section ====== */
+#snj-vision-mission {
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Vision Wrapper */
+.snj-vision-wrapper {
+  background-color: #0b0f48;
+  padding: 80px 20px 60px;
+  position: relative;
+  z-index: 2;
+}
+
+/* Mission Wrapper (Full White Background) */
+.snj-mission-wrapper {
+  background-color: #ffffff;
+  padding: 150px 0px 20px;
+  position: relative;
+  z-index: 9;
+  margin-top: -100px; /* Overlap */
+}
+
+/* Vision Circle */
+.snj-vision-box {
+  color: #fff;
+  padding: 100px 40px;
+  border-radius: 50%;
+  max-width: 480px;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+      margin-bottom: 120px;
+
+}
+
+.snj-vision-box::after {
+  content: "";
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  box-shadow: 0 0 60px rgba(0, 0, 255, 0.2);
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.snj-vision-box::before {
+  content: "";
+  position: absolute;
+  right: -13.5%;
+  top: 50%;
+  width: 12px;
+  height: 12px;
+  background: #2d9eff;
+  border-radius: 50%;
+}
+
+/* Mission Box */
+.snj-mission-box {
+  background: #ffffff;
+  color: #000;
+  max-width: 480px;
+  margin: 0 auto;
+  /* padding: 100px 40px; */
+  position: relative;
+  text-align: center;
+  border-radius: 50%;
+  margin-bottom: 139px;
+}
+
+.snj-mission-box::after {
+  content: "";
+  position: absolute;
+  right: -50%;
+  top: 0%;
+  width: 12px;
+  height: 12px;
+  background: #2d9eff;
+  border-radius: 50%;
+}
+
+.snj-mission-box::before {
+  z-index: 9999;
+  content: "";
+  position: absolute;
+  width: 950px;
+  height: 950px;
+  box-shadow: 0 0 60px rgba(0, 0, 255, 0.5);
+  border-radius: 50%;
+  top: -14%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.bi-eye{
+  height: 45px;
+  width: 45px;
+}
+
+/* Common Text Styles */
+.snj-subtitle {
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 1px;
+  opacity: 0.8;
+  margin-bottom: 10px;
+}
+
+.snj-title {
+  font-size: 64px;
+  font-family: serif 'Montserrat';
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+
+
+.snj-desc {
+  font-size: 24px;
+  margin: 0 auto;
+}
+
+
+/* ✅ Responsive */
+@media (max-width: 992px) {
+  .snj-vision-box,
+  .snj-mission-box {
+    max-width: 380px;
+    padding: 20px 20px;
+  }
+  .snj-title {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .snj-mission-wrapper {
+    margin-top: 0; /* Remove overlap on mobile */
+    padding-top: 0px;
+  }
+  .snj-vision-box::after,
+  .snj-mission-box::before {
+    display: none; /* Disable heavy effects for mobile */
+  }
+  .snj-vision-box,
+  .snj-mission-box {
+    border-radius: 50%;
+    max-width: 300px;
+    margin-bottom: 0px;
+  }
+  .snj-title {
+    font-size: 28px;
+  }
+  .snj-desc {
+    font-size: 14px;
+  }
+  .snj-subtitle{
+    font-size: 18px;
+  }
+  .bi-eye {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .snj-title {
+    font-size: 34px;
+  }
+  .snj-desc {
+    font-size: 13px;
+  }
+  .snj-subtitle{
+    font-size: 18px;
+  }
+}
+
+
+</style>
+
+</head>
+<body>
+  <!-- Navbar -->
+   <!-- Navbar -->
+  <header class="navbar navbar-expand-lg">
+    <div class="container-fluid nav-container">
+      <div class="logo">
+        <img src="./assets/Logo.png" alt="Auracleon Logo">
+      </div>
+
+      <!-- Hamburger toggle button for mobile -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse align-items-center" id="navbarContent">
+        <ul class="nav-links navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a href="./index.html" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="./about.html" class="nav-link active">About</a></li>
+          <li class="nav-item"><a href="./services.html" class="nav-link">Services</a></li>
+          <li class="nav-item"><a href="./our_team.html" class="nav-link ">Our Team</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+    <section class="team_hero ">
+  <div class="container  fade-up-on-scroll">
+    <div class="row">
+      
+      <!-- Left Column -->
+      <div class="col team_hero-left">
+        <div class="hero-heading">
+          <h1 style="font-size:65px;">About us</h1>
+        </div>
+        <div class="hero-bottom">
+          <p>We are a technology company committed to delivering innovative digital solutions that empower businesses to grow and transform in the modern world
+</p>
+        
+        </div>
+      </div>
+      
+      <!-- Right Column -->
+      <div class="col team_hero-right">
+        <img src="./assets/Group 1820547092.png" alt="Hero Graphic">
+      </div>
+      
+    </div>
+  </div>
+</section>
+<section class="solutions-section">
+  <div class="container">
+    <div class="left-graphic">
+      <img src="./assets/Layer_1.png" alt="Graphic">
+    </div>
+    <div class="right-content">
+      <h2 class="sol-heading">Lorem ipsum dolor sit amet consectetur.Id at cursus ut mi ultrices. At ultricies consequat cras tincidunt nulla.</h2>
+      <p>Lorem ipsum dolor sit amet consectetur. Id at cursus ut mi ultrices. At ultricies consequat cras tincidunt nulla.</p>
+      <p>Id at cursus ut mi ultrices. At ultricies consequat cras tincidunt nulla. Lorem ipsum dolor sit amet consectetur. Id at cursus ut mi ultrices. At ultricies consequat cras tincidunt nulla.</p>
+      <p>Lorem ipsum dolor sit amet consectetur. Id at cursus ut mi ultrices. At ultricies consequat cras tincidunt nulla.</p>
+      <div class="tags">
+        <span>Enterprise Applications</span>
+        <span>Mobility & CX</span>
+        <span>Data & Analytics</span>
+        <span>Infrastructure, ITOps & Observability</span>
+        <span>Cybersecurity</span>
+        <span>Cloud Solutions</span>
+        <span>Emerging Technology Solutions</span>
+        <span>Pre-built Solutions</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="snj-vision-mission">
+  <div class="snj-vision-wrapper">
+    <div class="snj-vision-box">
+      <h5 class="snj-subtitle">Company Overview</h5>
+      <h2 class="snj-title">Vision</h2>
+      <div class="snj-icon">
+       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16">
+  <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8M1.173 8a13 13 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5s3.879 1.168 5.168 2.457A13 13 0 0 1 14.828 8q-.086.13-.195.288c-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5s-3.879-1.168-5.168-2.457A13 13 0 0 1 1.172 8z"/>
+  <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5M4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0"/>
+</svg>
+      </div>
+      <p class="snj-desc">
+        Id at cursus ut mi ultrices. At ultricies consequat cras incididunt nulla.
+        Lorem ipsum dolor sit amet consectetur. Id at cursus ut mi ultrices.
+        At ultricies consequat cras incididunt nulla.
+      </p>
+    </div>
+  </div>
+
+  <div class="snj-mission-wrapper">
+    <div class="snj-mission-box">
+      <h5 class="snj-subtitle" style="color: #222B72;">Our Core Values & Beliefs</h5>
+      <h2 class="snj-title" style="color: #222B72;">Mission</h2>
+      <p class="snj-desc" style="color: #222B72;">
+        Id at cursus ut mi ultrices. At ultricies consequat cras incididunt nulla.
+        Lorem ipsum dolor sit amet consectetur. Id at cursus ut mi ultrices.
+        At ultricies consequat cras incididunt nulla.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="testimonials">
+  <div class="overlay">
+    <h3>Testimonials</h3>
+    <h2>Our Client Testimonials</h2>
+
+   <div class="carousel">
+      <div class="slide active">
+        <img src="./assets/Logo (1).png" alt="Client 1" class="client-img">
+        <h4 class="user-name">Hani Alshehri​</h4>
+        <p class="position">VP Enterprise Applications - Mobily​</p>
+        <p class="message">"I would like to send my congratulations and appreciation to everyone involved in this project. It has been a very tough ride for everyone.​"</p>
+      </div>
+
+      <div class="slide">
+  <img src="./assets/Logo (1).png" alt="Client 1" class="client-img">
+        <h4 class="user-name">Hani Alshehri​</h4>
+        <p class="position">VP Enterprise Applications - Mobily​</p>
+        <p class="message">"I would like to send my congratulations and appreciation to everyone involved in this project. It has been a very tough ride for everyone.​"</p>
+             </div>
+
+      <div class="slide">
+ <img src="./assets/Logo (1).png" alt="Client 1" class="client-img">
+        <h4 class="user-name">Hani Alshehri​</h4>
+        <p class="position">VP Enterprise Applications - Mobily​</p>
+        <p class="message">"I would like to send my congratulations and appreciation to everyone involved in this project. It has been a very tough ride for everyone.​"</p>
+            </div>
+    </div>
+
+    <button class="prev">&#10094;</button>
+    <button class="next">&#10095;</button>
+  </div>
+  </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section1 text-center d-flex flex-column justify-content-center align-items-center fade-up-on-scroll">
+  <div class="container">
+    <h2 class="cta-heading">
+      Become a part of the new <br> big thing!
+    </h2>
+    <a href="#" class="btn btn-primary btn-lg mt-4">
+      Join Our Team
+      <img src="./assets/arrow-right-double-1.svg" alt="" class="ms-2">
+    </a>
+  </div>
+</section>
+
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <!-- Left Side -->
+      <div class="col-md-4">
+        <h4 class="left-heading">Driving Innovation Through Technology.</h4>
+        <p>Auracleon Technology empowers organizations to build smarter, scalable, and future-ready solutions.</p>
+        <p class="label-text">Email</p>
+        <p class="value-text">info@auracleon.com</p>
+        <p class="label-text">Address</p>
+        <p class="value-text">70-72 Cherni vrah Blvd., Dubai, AUE</p>
+      </div>
+
+      <!-- Right Side Columns -->
+      <div class="col-md-8 d-flex justify-content-between">
+        <!-- About -->
+        <div class="footer-col">
+          <h5>About</h5>
+          <a href="#">About Us</a>
+          <a href="#">Our Team</a>
+          <a href="#">Careers</a>
+          <a href="#">Contact us</a>
+        </div>
+        <!-- Link -->
+        <div class="footer-col">
+          <h5>Link</h5>
+          <a href="#">Services</a>
+          <a href="#">Help Center</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms & Conditions</a>
+        </div>
+        <!-- Social Media -->
+        <div class="footer-col">
+          <h5>Social Media</h5>
+          <a href="#">LinkedIn</a>
+          <a href="#">Facebook</a>
+          <a href="#">Instagram</a>
+          <a href="#">X</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Logo -->
+    <div class="footer-bottom">
+      <img src="./assets/Logo.png" alt="Auracleon Logo">
+     
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/18.2.1/js/intlTelInput.min.js"></script>
+
+  <script>
+    const input = document.querySelector("#phone");
+    window.intlTelInput(input, {
+      initialCountry: "ae", // Default Jordan
+      preferredCountries: ["jo", "sa", "ae", "us", "gb", "in"],
+      separateDialCode: true, // ✅ Show country code next to flag
+      utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/18.2.1/js/utils.js"
+    });
+
+     const circle = document.querySelector('.circle');
+  let timer2;
+
+  // jab mouse move kare — active effect
+  window.addEventListener('mousemove', () => {
+    circle.style.transform = 'scale(1.05)';
+    circle.style.transition = 'transform 0.3s ease-out';
+
+    // agar movement continue ho to timer reset karte raho
+    clearTimeout(timer2);
+
+    // jab movement ruk jaaye — normal state me wapas
+    timer2 = setTimeout(() => {
+      circle.style.transform = 'scale(1)';
+    }, 200);
+  });
+
+   const fadeEls = document.querySelectorAll('.fade-up-on-scroll');
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('show');
+        // Optional: once visible, stop observing (so it doesn’t re-animate)
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.2 }); // 0.2 means 20% visible triggers the animation
+
+  fadeEls.forEach(el => observer.observe(el));
+  </script>
+
+<script>
+  const diamond = document.querySelector('.diamond-circle');
+  let timer;
+
+  // jab mouse move kare
+  window.addEventListener('mousemove', () => {
+    // jab movement detect ho — popup / active effect
+    diamond.style.transform = 'scale(1.05)';
+    diamond.style.transition = 'transform 0.3s ease-out';
+
+    // agar pehle se timer chal raha ho to reset karo
+    clearTimeout(timer);
+
+    // agar movement ruk jaaye (200ms tak koi move nahi), to normal position par wapas le aao
+    timer = setTimeout(() => {
+      diamond.style.transform = 'scale(1)';
+    }, 200);
+  });
+</script>
+<script>
+  const tabs = document.querySelectorAll('#serviceTabs li');
+  const contents = document.querySelectorAll('.service-content');
+
+  tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      // remove active class from all tabs
+      tabs.forEach(t => t.classList.remove('active'));
+      // hide all content
+      contents.forEach(c => c.classList.remove('active'));
+
+      // add active class to clicked tab
+      tab.classList.add('active');
+      const target = document.getElementById(tab.dataset.tab);
+      target.classList.add('active');
+    });
+  });
+</script>
+<script>
+  let slides = document.querySelectorAll('.slide');
+  let index = 0;
+
+  function showSlide(i) {
+    slides.forEach(slide => slide.classList.remove('active'));
+    slides[i].classList.add('active');
+  }
+
+  document.querySelector('.prev').onclick = () => {
+    index = (index <= 0) ? slides.length - 1 : index - 1;
+    showSlide(index);
+  };
+
+  document.querySelector('.next').onclick = () => {
+    index = (index + 1) % slides.length;
+    showSlide(index);
+  };
+</script>
+
+</body>
+
+</html>
