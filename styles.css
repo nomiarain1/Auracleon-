@@ -75,7 +75,7 @@ body {
 .btn-outline {
   border: 1px solid #fff;
   padding: 10px 20px;
-  width: 250px;
+  width: 270px;
   text-decoration: none;
   color: #fff;
   font-size: 14px;
@@ -265,7 +265,7 @@ justify-self: start;
 .info-btn-outline{
   border: 1px solid #1D2041;
   padding: 10px 20px;
-  width: 160px;
+  
   text-decoration: none;
   color: #1D2041;
   font-size: 14px;
