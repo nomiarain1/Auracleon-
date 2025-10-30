@@ -189,7 +189,10 @@ justify-self: start;
     width: 100%;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
-    color: #0B5B9D;
+    color: #1D2041;
+  padding-top:20px;
+  padding-bottom:20px;
+  background-color:#00B2E9;
   }
 
   .scroll-track {
@@ -1919,6 +1922,7 @@ div#navbarContent {
   }
 
 }
+
 
 
 
