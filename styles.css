@@ -243,14 +243,14 @@ justify-self: start;
 
 
 
-/*.logo-carousel {
+.logo-carousel {
   background: #00aef0;
   width: 100%;
   border-top: 1px solid #fff;   /* top white border */
   border-bottom: 1px solid #fff; /* bottom white border */
 }
 
-/*.carousel-container {
+.carousel-container {
   width: 100%;
   overflow: hidden;
 }
@@ -273,7 +273,7 @@ justify-self: start;
   0% { transform: translateX(0); }
   100% { transform: translateX(-50%); }
 }
-*/
+
 
 /* Info Section */
 /* Info Section */
@@ -1919,6 +1919,7 @@ div#navbarContent {
   }
 
 }
+
 
 
 
