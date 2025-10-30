@@ -188,7 +188,8 @@ justify-self: start;
     white-space: nowrap;
     width: 100%;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
+    font-weight: 400;
+  font-size:28px;
     color: #1D2041;
   padding-top:20px;
   padding-bottom:20px;
@@ -1922,6 +1923,7 @@ div#navbarContent {
   }
 
 }
+
 
 
 
