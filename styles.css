@@ -223,6 +223,7 @@ justify-self: start;
 
 .info-left {
   display: flex;
+  height:500px;
   flex-direction: column;
   justify-content: center;
   gap: 20px;
@@ -1854,6 +1855,7 @@ div#navbarContent {
   }
 
 }
+
 
 
 
