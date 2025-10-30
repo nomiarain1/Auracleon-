@@ -229,9 +229,7 @@ justify-self: start;
   gap: 20px;
   border-right:1px solid #fff ;
 }
-.l-img.d-flex.justify-content-center.align-items-center {
-    margin-top: 70px !important;
-}
+
 .info-left h2 {
   font-size: 40px;
   color: #1D2041;
@@ -1857,6 +1855,7 @@ div#navbarContent {
   }
 
 }
+
 
 
 
