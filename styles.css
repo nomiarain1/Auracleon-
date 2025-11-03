@@ -181,8 +181,33 @@ justify-self: start;
 }
 
 /* Logo Carousel */
+.text-carousel { 
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 28px;
+  color: white;
+  padding-bottom: 20px;
+  background-color: #00B2E9;
+}
 
-.text-carousel {
+.scroll-track {
+  display: inline-flex;
+  transition: transform 0.8s ease-in-out;
+  will-change: transform;
+}
+
+.scroll-track span {
+  padding: 30px 50px;
+  border: 2px solid #fff;
+  border-top: none !important;
+  display: inline-block;
+}
+
+/* .text-carousel {
     position: relative;
     overflow: hidden;
     white-space: nowrap;
@@ -191,7 +216,6 @@ justify-self: start;
     font-weight: 600;
   font-size:28px;
     color: white;
-  padding-top:20px;
   padding-bottom:20px;
   background-color:#00B2E9;
   }
@@ -202,10 +226,12 @@ justify-self: start;
   }
 
   .scroll-track span {
-    margin-right: 60px;
+    padding: 30px 50px;
+    border: 2px solid #fff;
+    border-top: none !important;
     display: inline-block;
-  }
-
+  } */
+/* 
   @keyframes scroll-left {
     0% {
       transform: translateX(0);
@@ -213,8 +239,9 @@ justify-self: start;
     100% {
       transform: translateX(-50%);
     }
-  }
+  } */
 
+  
   /* Pause on hover */
   .text-carousel:hover .scroll-track {
     animation-play-state: paused;
