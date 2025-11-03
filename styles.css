@@ -75,7 +75,7 @@ body {
 .btn-outline {
   border: 1px solid #fff;
   padding: 10px 20px;
-  width: 270px;
+  width: 150px;
   text-decoration: none;
   color: #fff;
   font-size: 14px;
@@ -207,6 +207,11 @@ justify-self: start;
   display: inline-block;
 }
 
+
+span a {
+    color: #fff;
+    text-decoration: none
+}
 /* .text-carousel {
     position: relative;
     overflow: hidden;
@@ -1261,7 +1266,7 @@ ul.nav-links.navbar-nav.ms-auto.mb-2.mb-lg-0 {
     margin-top: -174px;
     margin-left: 20px;
     z-index: -1;
- 
+    transform: rotate(-79deg);
 }
 .col.team_hero-left {
     margin-top: 50px !important;
@@ -1948,7 +1953,6 @@ div#navbarContent {
   }
 
 }
-
 
 
 
