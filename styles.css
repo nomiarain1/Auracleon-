@@ -74,11 +74,11 @@ body {
 }
 .btn-outline {
   border: 1px solid #fff;
-  padding: 10px 20px;
-  width: 150px;
+  padding: 12px 33px;
+  width: 250px;
   text-decoration: none;
   color: #fff;
-  font-size: 14px;
+  font-size: 20px;
   border-radius: 4px;
   display: flex;
   align-items: center;
@@ -1953,6 +1953,7 @@ div#navbarContent {
   }
 
 }
+
 
 
 
