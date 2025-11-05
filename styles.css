@@ -75,7 +75,7 @@ body {
 .btn-outline {
   border: 1px solid #fff;
   padding: 12px 33px;
-  width: 250px;
+
   text-decoration: none;
   color: #fff;
   font-size: 20px;
@@ -363,11 +363,11 @@ span a {
 }
 .info-btn-outline{
   border: 1px solid #1D2041;
-  padding: 10px 20px;
+  padding: 12px 33px;
   
   text-decoration: none;
   color: #1D2041;
-  font-size: 14px;
+  font-size: 20px;
   border-radius: 4px;
   display: flex;
   align-items: center;
@@ -1953,6 +1953,7 @@ div#navbarContent {
   }
 
 }
+
 
 
 
