@@ -165,7 +165,7 @@ width:200px;
 .hero-bottom p {
 justify-self: start;
   margin-bottom: 20px;
-  font-size: 18px;
+  font-size: 20px;
   color: #c7c7c7;
 }
 
@@ -591,7 +591,9 @@ span a {
   font-weight: 700;
   line-height: 1.2;
 }
-
+.services-left p{
+  font-size:20px;
+}
 .services-image {
   width: 319px;
   height: 319px;
@@ -705,7 +707,7 @@ span a {
 .side-divider {
   width: 2px;
   height: 80px;
-  margin-left:100px;
+ 
   background-color: #1D2041;
   margin: 0 auto; /* horizontally center */
 }
@@ -833,7 +835,7 @@ form button {
   background: transparent;
   color: #000181;
   font-family: 'Readex Pro', sans-serif;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 600;
   display: flex;
   align-items: center;
@@ -1954,6 +1956,7 @@ div#navbarContent {
   }
 
 }
+
 
 
 
