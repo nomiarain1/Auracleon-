@@ -75,7 +75,7 @@ body {
 .btn-outline {
   border: 1px solid #fff;
   padding: 12px 33px;
-
+width:200px;
   text-decoration: none;
   color: #fff;
   font-size: 20px;
@@ -1953,6 +1953,7 @@ div#navbarContent {
   }
 
 }
+
 
 
 
