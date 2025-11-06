@@ -31,7 +31,7 @@ body {
 }
 /* Navbar Customization */
 .navbar {
-  background-color:#1D2041;
+  background-color:white;
   width: 100%;
   top: 0;
   left: 0;
@@ -73,11 +73,11 @@ body {
     color: rgb(255 255 255);
 }
 .btn-outline {
-  border: 1px solid #fff;
+  border: 1px solid #1D2041;
   padding: 12px 33px;
 width:200px;
   text-decoration: none;
-  color: #fff;
+  color: #1D2041;
   font-size: 20px;
   border-radius: 4px;
   display: flex;
@@ -87,8 +87,8 @@ width:200px;
 }
 
 .btn-outline:hover {
-  background: #fff;
-  color: #0e1535;
+  background: #1D2041;
+  color: white;
 }
 
 .btn-outline.dark {
@@ -1956,6 +1956,7 @@ div#navbarContent {
   }
 
 }
+
 
 
 
