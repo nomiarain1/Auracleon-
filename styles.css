@@ -157,7 +157,7 @@ width:200px;
   background-color:white;
   align-items: flex-start; /* left align */
   justify-content: flex-start; /* 👈 dono ko upar le aayega */
-  padding-top: 200px; /* navbar ke liye space */
+  padding-top: 150px; /* navbar ke liye space */
   gap: 50px; /* heading aur bottom ke beech ka distance control karne ke liye */
 }
 
@@ -436,7 +436,7 @@ span a {
 .dot:nth-child(5n) { animation-delay: 0.8s; }
 
 .diamond-circle {
-  background: #1d1e3c; /* dark navy */
+  background: #343654; /* dark navy */
   width: 400px;
   height: 400px;
   border-radius: 50%;
@@ -445,6 +445,7 @@ span a {
   align-items: center;
   margin: auto;
   overflow: hidden;
+  border:1px solid #FFFFFF1A;
 }
 
 .diamond-grid {
@@ -1957,6 +1958,7 @@ div#navbarContent {
   }
 
 }
+
 
 
 
