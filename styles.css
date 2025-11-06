@@ -70,7 +70,7 @@ body {
   border-bottom: 1px solid #1D2041;
 }
 .navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
-    color: rgb(255 255 255);
+    color: #1D2041;
 }
 .btn-outline {
   border: 1px solid #1D2041;
