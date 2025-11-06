@@ -659,8 +659,7 @@ span a {
 .cta-section {
   position: relative; /* z-index kaam karne ke liye zaroori */
   z-index: 2; /* 👈 section ko upar laane ke liye (increase if needed) */
-
-  height: 700px;
+  height: 500px;
   background-image: url('./assets/blue-wavy-background 1.png');
   background-repeat: no-repeat;
   background-size:cover;
@@ -1956,6 +1955,7 @@ div#navbarContent {
   }
 
 }
+
 
 
 
