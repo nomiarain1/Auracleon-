@@ -661,7 +661,7 @@ span a {
   z-index: 2; /* 👈 section ko upar laane ke liye (increase if needed) */
 
   height: 700px;
-  background-image: url('./assets/bg.png');
+  background-image: url('./assets/blue-wavy-background 1.png');
   background-repeat: no-repeat;
   background-size:cover;
   background-position: center;/* optional fallback color */
@@ -1956,6 +1956,7 @@ div#navbarContent {
   }
 
 }
+
 
 
 
