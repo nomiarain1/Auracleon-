@@ -315,7 +315,7 @@ span a {
 /* Info Section */
 /* Info Section */
 .info {
-  background-color: #00B2E9;
+  background-color: #1D2041;
   color: #fff;
   padding: 100px 0;
 }
@@ -331,14 +331,14 @@ span a {
 
 .info-left h2 {
   font-size: 40px;
-  color: #1D2041;
+  color: #FFFFFF;
   font-weight: 700;
   line-height: 1.2;
 }
 
 .info-left  p {
   font-size: 24px;
-  color:#1D2041;
+  color:#FFFFFF;
   max-width: 500px;
 }
 
@@ -352,22 +352,22 @@ span a {
 .info-right h2 {
     margin-top: 80px;
   font-size: 40px;
-  color: #1D2041;
+  color: #FFFFFF;
   font-weight: 700;
   line-height: 1.2;
 }
 
 .info-right  p {
   font-size: 24px;
-  color:#1D2041;
+  color:#FFFFFF;
   max-width: 600px;
 }
 .info-btn-outline{
-  border: 1px solid #1D2041;
+  border: 1px solid #FFFFFF;
   padding: 12px 33px;
   
   text-decoration: none;
-  color: #1D2041;
+  color: #FFFFFF;
   font-size: 20px;
   border-radius: 4px;
   display: flex;
@@ -397,13 +397,14 @@ span a {
 
 
 .circle {
-  background: #1d1e3c; /* dark navy circle */
+  background: #343654; /* dark navy circle */
   width: 400px;
   height: 400px;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
+  border:1px solid #FFFFFF1A;
 }
 
 .grid {
@@ -1956,6 +1957,7 @@ div#navbarContent {
   }
 
 }
+
 
 
 
