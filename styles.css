@@ -157,7 +157,7 @@ width:200px;
   align-items: flex-start; /* left align */
   justify-content: flex-start; /* 👈 dono ko upar le aayega */
   padding-top: 200px; /* navbar ke liye space */
-  gap: 200px; /* heading aur bottom ke beech ka distance control karne ke liye */
+  gap: 80px; /* heading aur bottom ke beech ka distance control karne ke liye */
 }
 
 
@@ -1955,6 +1955,7 @@ div#navbarContent {
   }
 
 }
+
 
 
 
