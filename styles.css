@@ -30,12 +30,15 @@ body {
     gap: 30px;
 }
 /* Navbar Customization */
-.navbar {
+.main-navbar {
   background-color:white;
   width: 100%;
   top: 0;
   left: 0;
 
+}
+header.team-navbar.navbar.navbar-expand-lg {
+    background: #1D2041;
 }
 
 .nav-container{
@@ -48,6 +51,12 @@ body {
 }
 
 .nav-links li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 20px;
+  transition: 0.3s;
+}
+.main-navbar .nav-links li a {
   text-decoration: none;
   color: #1D2041;
   font-size: 20px;
@@ -63,14 +72,23 @@ body {
 }
 
 
-.nav-links li a:hover,
-.nav-links li a.active {
+.main-navbar .nav-links li a:hover,
+.main-navbar .nav-links li a.active {
   color: #1D2041;
   font-weight: 500;
   border-bottom: 1px solid #1D2041;
 }
-.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+.main-navbar .navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
     color: #1D2041;
+}
+.nav-links li a:hover,
+.nav-links li a.active {
+  color: #ffffff;
+  font-weight: 500;
+  border-bottom: 1px solid white;
+}
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: white;
 }
 .btn-outline {
   border: 1px solid #1D2041;
@@ -150,7 +168,12 @@ width:200px;
   line-height: 1.1;
   color:#1D2041;
 }
-
+.team-heading h1 {
+  font-size: 96px;
+  font-weight: 700;
+  line-height: 1.1;
+  color:#ffffff;
+}
 .hero-left {
   display: flex;
   flex-direction: column;
@@ -169,7 +192,12 @@ justify-self: start;
   font-size: 20px;
   color: #1D2041;
 }
-
+.team-bottom p {
+justify-self: start;
+  margin-bottom: 20px;
+  font-size: 20px;
+  color:#ffffff;
+}
 .hero-right {
   display: flex;
   justify-content: center;
@@ -631,7 +659,7 @@ span a {
   margin-bottom: 25px;
 }
 
-.services-btn {
+/* .services-btn {
   border: 1px solid #1D2041;
   padding: 12px 33px;
   text-decoration: none;
@@ -647,7 +675,8 @@ span a {
 .services-btn:hover {
   background: #1D2041;
   color: #fff;
-}
+} */
+
 
 .left-section {
   border-top: 1px solid #1D2041;
@@ -939,6 +968,18 @@ form button:hover {
     .btn-icon {
       width: 16px;
     }
+    .btn-icon , svg {
+    vertical-align: middle;
+    margin-top: 3px;
+    color: #000;
+}
+.hero-icon{
+  filter: brightness(0) saturate(100%) invert(11%) sepia(10%) saturate(3466%) hue-rotate(203deg) brightness(95%) contrast(89%);
+  transition: filter 0.3s ease;
+}
+.btn-outline:hover .hero-icon {
+  filter: brightness(0) invert(1); /* white on hover */
+}
 /* 📱 Mobile Responsive */
 @media (max-width: 768px) {
 
@@ -996,6 +1037,10 @@ div#navbarContent {
     text-align: center;
   }
   .hero-heading h1 {
+    font-size: 36px;
+    text-align: center;
+  }
+    .team-heading h1 {
     font-size: 36px;
     text-align: center;
   }
@@ -1279,6 +1324,9 @@ ul.nav-links.navbar-nav.ms-auto.mb-2.mb-lg-0 {
 .hero-bottom p{
   text-align: center !important;
 }
+.team-bottom p{
+  text-align: center !important;
+}
 .finance-section {
    padding: 25px 10px !important;
   
@@ -1438,10 +1486,11 @@ div#navbarContent {
 }
 
 .finance-section img {
-      max-width: 100%;
-      border-radius: 16px;      
-     border: 20px solid rgba(255, 255, 255, 0.2);
-
+  max-width: 100%;
+  /* width: 100%;
+  height: 100%; */
+  border-radius: 16px;      
+  
     }
 
 .finance-section ul {
@@ -1453,7 +1502,36 @@ div#navbarContent {
        font-size: 24px;
   line-height: 36px;
     }
-    
+.service-img{
+    /* height: 399px;
+    width: 598px; */
+    background: rgba(255, 255, 255, 0.155);
+    padding: 30px 25px;
+    border-radius: 16px;
+    /* box-shadow: -4px -4px 2px rgba(255, 255, 255, 0.8);  */
+
+}   
+.service-img {
+  position: relative;
+  border-radius: 12px; /* jahan corner round hoga */
+}
+
+/* sirf top-left corner me white glow */
+.service-img::before {
+  content: "";
+  position: absolute;
+  background-color: none;
+  top: 0px;
+  left: 0px;
+  width: 50%;   /* corner area */
+  height: 50%;  /* corner area */
+  border-top-left-radius: 16px;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  pointer-events: none;
+  z-index: -1;
+}
+
 /* about page*/
 
      .testimonials {
