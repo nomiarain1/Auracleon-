@@ -335,10 +335,10 @@ span a {
   border-left: 1px solid #fff;
   border-right: 1px solid #fff;
 }
-/* @keyframes scroll {
+@keyframes scroll {
   0% { transform: translateX(0); }
   100% { transform: translateX(-50%); }
-} */
+}
 
 
 /* Info Section */
@@ -410,12 +410,12 @@ span a {
   animation: carouselLoad 1s ease-out forwards 0.5s; /* delay so it appears after hero */
 }
 
-/* @keyframes carouselLoad {
+@keyframes carouselLoad {
   to {
     opacity: 1;
     transform: translateY(0);
   }
-} */
+}
 
 .info-right img {
   max-width: 80%;
@@ -453,11 +453,11 @@ span a {
 }
 
 /* Open → Close → Open */
-/* @keyframes flowerBlink {
+@keyframes flowerBlink {
   0%   { transform: scale(0); opacity: 0; }
   50%  { transform: scale(1); opacity: 1; }
   100% { transform: scale(0); opacity: 0; }
-} */
+}
 
 /* Delay for ripple effect */
 .dot:nth-child(3n) { animation-delay: 0.2s; }
@@ -590,23 +590,23 @@ span a {
   animation: servicesLoad 1s ease-out forwards 1.2s; /* thoda delay */
 }
 
-/* @keyframes servicesLoad {
+@keyframes servicesLoad {
   to {
     opacity: 1;
     transform: translateY(0);
   }
-} */
+}
 
 .container {
   opacity: 0;
-  transform: translate(40px);
+  transform: translateY(40px);
   animation: ctaLoad 1s ease-out forwards 1.4s; /* small delay for sequence */
 }
 
 @keyframes ctaLoad {
   to {
     opacity: 1;
-    transform: translate(0);
+    transform: translateY(0);
   }
 }
 
