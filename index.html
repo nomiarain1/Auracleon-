@@ -238,7 +238,7 @@ At Auracleon, we envision a world where every business challenge becomes an oppo
       <!-- Left Column -->
       <div class="col-lg-3 left-section">
         <ul class="service-list" id="serviceTabs">
-          <li data-tab="ecommerce">Product & Delivery </li>
+          <li data-tab="ecommerce" class="active">Product & Delivery </li>
           <li data-tab="finance">Engineering </li>
           <li data-tab="sports">Cloud & Data</li>
           <li data-tab="health">Security & Compliance</li>
@@ -563,24 +563,63 @@ Fill out the form below, and one of our specialists will get in touch to discuss
   });
 </script>
 
-<script>
+<!-- <script>
   const tabs = document.querySelectorAll('#serviceTabs li');
   const contents = document.querySelectorAll('.service-content');
 
   tabs.forEach(tab => {
     tab.addEventListener('click', () => {
-      // remove active class from all tabs
       tabs.forEach(t => t.classList.remove('active'));
-      // hide all content
       contents.forEach(c => c.classList.remove('active'));
 
-      // add active class to clicked tab
       tab.classList.add('active');
       const target = document.getElementById(tab.dataset.tab);
       target.classList.add('active');
     });
   });
+</script> -->
+
+<script>
+  const tabs = document.querySelectorAll('#serviceTabs li');
+  const contents = document.querySelectorAll('.service-content');
+
+  // Check localStorage for last active tab
+  const savedTab = localStorage.getItem('activeServiceTab');
+
+  if (savedTab) {
+    // Remove all active classes
+    tabs.forEach(t => t.classList.remove('active'));
+    contents.forEach(c => c.classList.remove('active'));
+
+    // Activate saved tab & content
+    const activeTab = document.querySelector(`#serviceTabs li[data-tab="${savedTab}"]`);
+    const activeContent = document.getElementById(savedTab);
+
+    if (activeTab && activeContent) {
+      activeTab.classList.add('active');
+      activeContent.classList.add('active');
+    }
+  }
+
+  // Add click events to tabs
+  tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      // Remove active from all
+      tabs.forEach(t => t.classList.remove('active'));
+      contents.forEach(c => c.classList.remove('active'));
+
+      // Add active to clicked tab & its content
+      tab.classList.add('active');
+      const target = document.getElementById(tab.dataset.tab);
+      target.classList.add('active');
+
+      // Save active tab in localStorage
+      localStorage.setItem('activeServiceTab', tab.dataset.tab);
+    });
+  });
 </script>
+
+
 <script>
   const track = document.getElementById("scrollTrack");
   const slides = Array.from(track.children);
