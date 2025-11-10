@@ -56,7 +56,7 @@
     <div class="row">
       
       <!-- Left Column -->
-      <div class="col team_hero-left">
+      <div class="col team_hero-left fade-up-on-scroll">
         <div class="team-heading">
           <h1 style="font-size:65px;">The Team Behind The Delivery</h1>
         </div>
@@ -258,23 +258,43 @@ Fill out the form below, and our team will reach out to explore how your skills 
     }, 200);
   });
 
-   const fadeEls = document.querySelectorAll('.fade-up-on-scroll');
+  //  const fadeEls = document.querySelectorAll('.fade-up-on-scroll');
 
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('show');
-        // Optional: once visible, stop observing (so it doesn’t re-animate)
-        observer.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.2 }); // 0.2 means 20% visible triggers the animation
+  // const observer = new IntersectionObserver((entries) => {
+  //   entries.forEach(entry => {
+  //     if (entry.isIntersecting) {
+  //       entry.target.classList.add('show');
+  //       // Optional: once visible, stop observing (so it doesn’t re-animate)
+  //       observer.unobserve(entry.target);
+  //     }
+  //   });
+  // }, { threshold: 0.2 }); // 0.2 means 20% visible triggers the animation
 
-  fadeEls.forEach(el => observer.observe(el));
+  // fadeEls.forEach(el => observer.observe(el));
+  const fadeEls = document.querySelectorAll('.fade-up-on-scroll');
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      // Animate from scale(0.8) to scale(1)
+      entry.target.animate([
+        { opacity: 0, transform: 'scale(0.8) translateY(20px)' },
+        { opacity: 1, transform: 'scale(1) translateY(0)' }
+      ], {
+        duration: 800,
+        easing: 'ease-out',
+        fill: 'forwards'
+      });
+
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.2 });
+
+fadeEls.forEach(el => observer.observe(el));
+
   </script>
-<script>
- 
-</script>
+
 <script>
   const diamond = document.querySelector('.diamond-circle');
   let timer;

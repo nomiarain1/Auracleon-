@@ -92,8 +92,8 @@ header.team-navbar.navbar.navbar-expand-lg {
 }
 .btn-outline {
   border: 1px solid #1D2041;
-  padding: 12px 15px;
-width:190px;
+  padding: 12px 33px;
+width:250px;
   text-decoration: none;
   color: #1D2041;
   font-size: 20px;
@@ -335,10 +335,10 @@ span a {
   border-left: 1px solid #fff;
   border-right: 1px solid #fff;
 }
-@keyframes scroll {
+/* @keyframes scroll {
   0% { transform: translateX(0); }
   100% { transform: translateX(-50%); }
-}
+} */
 
 
 /* Info Section */
@@ -410,12 +410,12 @@ span a {
   animation: carouselLoad 1s ease-out forwards 0.5s; /* delay so it appears after hero */
 }
 
-@keyframes carouselLoad {
+/* @keyframes carouselLoad {
   to {
     opacity: 1;
     transform: translateY(0);
   }
-}
+} */
 
 .info-right img {
   max-width: 80%;
@@ -453,11 +453,11 @@ span a {
 }
 
 /* Open → Close → Open */
-@keyframes flowerBlink {
+/* @keyframes flowerBlink {
   0%   { transform: scale(0); opacity: 0; }
   50%  { transform: scale(1); opacity: 1; }
   100% { transform: scale(0); opacity: 0; }
-}
+} */
 
 /* Delay for ripple effect */
 .dot:nth-child(3n) { animation-delay: 0.2s; }
@@ -590,23 +590,23 @@ span a {
   animation: servicesLoad 1s ease-out forwards 1.2s; /* thoda delay */
 }
 
-@keyframes servicesLoad {
+/* @keyframes servicesLoad {
   to {
     opacity: 1;
     transform: translateY(0);
   }
-}
+} */
 
 .container {
   opacity: 0;
-  transform: translateY(40px);
+  transform: translate(40px);
   animation: ctaLoad 1s ease-out forwards 1.4s; /* small delay for sequence */
 }
 
 @keyframes ctaLoad {
   to {
     opacity: 1;
-    transform: translateY(0);
+    transform: translate(0);
   }
 }
 
@@ -651,7 +651,7 @@ span a {
 }
 
 .service-list li:hover {
-  color: #1D2041;
+  color: #1d2041;
 }
 
 .services-right p {
@@ -805,11 +805,11 @@ form .form-label {
   color: #000;
 }
 .info-btn-outline1{
-  border: 1px solid #000181;
+  border: 1px solid #1D2041;
   padding: 12px 33px;
  width: 160px;
   text-decoration: none;
-  color: #000181;
+  color: #1D2041;
   font-size: 20px;
   border-radius: 4px;
   display: flex;
@@ -875,24 +875,6 @@ form button {
   gap: 10px; /* space between text & arrow */
   cursor: pointer;
   transition: all 0.3s ease;
-}
-
-a.info-btn-outline1.site-btn {
-    color: #000181 !important;
-    border: 1px solid #000181 !important;
-}
-a.info-btn-outline1.site-btn:hover{
-  background-color:#000181;
-color:#FFFFFF !important;
-}
-a.info-btn-outline1 {
-    color: #000181 !important;
-    border: 1px solid #000181 !important;
-}
-
-a.info-btn-outline1:hover{
-  background-color:#000181;
- color:#FFFFFF !important;
 }
 
 form button:hover {
@@ -1368,9 +1350,9 @@ ul.nav-links.navbar-nav.ms-auto.mb-2.mb-lg-0 {
 
 
 .service-list li.active {
-  color: #000181;       /* highlight color */
+  color: #00B2E9;       /* highlight color */
   font-weight: 700;
-  border-left: 3px solid #000181;
+  border-left: 3px solid #00B2E9;
   padding-left: 10px;
   transition: 0.3s;
 }
@@ -1627,14 +1609,12 @@ div#navbarContent {
   width: 100%;
   background-color: #fff;
   padding: 80px 0;
-  z-index: 10;
   font-family: 'Montserrat', sans-serif;
 }
 .solutions-section {
   width: 100%;
   background-color: #fff;
   padding: 80px 0;
-  z-index: 10;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -2074,18 +2054,6 @@ div#navbarContent {
   }
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
