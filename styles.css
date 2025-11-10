@@ -805,11 +805,11 @@ form .form-label {
   color: #000;
 }
 .info-btn-outline1{
-  border: 1px solid #1D2041;
+  border: 1px solid #000181;
   padding: 12px 33px;
  width: 160px;
   text-decoration: none;
-  color: #1D2041;
+  color: #000181;
   font-size: 20px;
   border-radius: 4px;
   display: flex;
