@@ -883,7 +883,7 @@ a.info-btn-outline1.site-btn {
 }
 a.info-btn-outline1.site-btn:hover{
   background-color:#000181;
-  color:white;
+  text-color:#fff;
 }
 
 form button:hover {
@@ -2065,6 +2065,7 @@ div#navbarContent {
   }
 
 }
+
 
 
 
