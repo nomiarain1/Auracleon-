@@ -590,12 +590,12 @@ span a {
   animation: servicesLoad 1s ease-out forwards 1.2s; /* thoda delay */
 }
 
-/* @keyframes servicesLoad {
+ @keyframes servicesLoad {
   to {
     opacity: 1;
     transform: translateY(0);
   }
-} */
+} 
 
 .container {
   opacity: 0;
@@ -2054,6 +2054,7 @@ div#navbarContent {
   }
 
 }
+
 
 
 
