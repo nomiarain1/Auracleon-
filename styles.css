@@ -877,6 +877,15 @@ form button {
   transition: all 0.3s ease;
 }
 
+a.info-btn-outline1.site-btn {
+    color: #000181 !important;
+    border: 1px solid #000181 !important;
+}
+a.info-btn-outline1.site-btn:hover{
+  background-color:#000181;
+  color:white;
+}
+
 form button:hover {
   background: #000181;
   color: #fff;
@@ -2056,6 +2065,7 @@ div#navbarContent {
   }
 
 }
+
 
 
 
