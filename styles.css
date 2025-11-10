@@ -1314,10 +1314,15 @@ ul.nav-links.navbar-nav.ms-auto.mb-2.mb-lg-0 {
     text-align: center;
 }
 .col.team_hero-right {
-    margin-top: -174px;
+    margin-top: -225px;
     margin-left: 20px;
     z-index: -1;
     transform: rotate(-79deg);
+}
+  .col.team_hero-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .col.team_hero-left {
     margin-top: 50px !important;
@@ -2054,6 +2059,7 @@ div#navbarContent {
   }
 
 }
+
 
 
 
