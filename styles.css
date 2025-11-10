@@ -1350,9 +1350,9 @@ ul.nav-links.navbar-nav.ms-auto.mb-2.mb-lg-0 {
 
 
 .service-list li.active {
-  color: #00B2E9;       /* highlight color */
+  color: #000181;       /* highlight color */
   font-weight: 700;
-  border-left: 3px solid #00B2E9;
+  border-left: 3px solid #000181;
   padding-left: 10px;
   transition: 0.3s;
 }
@@ -2056,6 +2056,7 @@ div#navbarContent {
   }
 
 }
+
 
 
 
