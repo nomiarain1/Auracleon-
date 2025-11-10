@@ -92,8 +92,8 @@ header.team-navbar.navbar.navbar-expand-lg {
 }
 .btn-outline {
   border: 1px solid #1D2041;
-  padding: 12px 33px;
-width:250px;
+  padding: 12px 15px;
+width:190px;
   text-decoration: none;
   color: #1D2041;
   font-size: 20px;
@@ -877,6 +877,26 @@ form button {
   transition: all 0.3s ease;
 }
 
+a.info-btn-outline1.site-btn {
+    color: #000181 !important;
+    border: 1px solid #000181 !important;
+}
+
+a.info-btn-outline1.site-btn:hover{
+  background-color:#000181;
+  color:#FFFFFF !important;
+}
+
+a.info-btn-outline1{
+    color: #000181 !important;
+    border: 1px solid #000181 !important;
+}
+a.info-btn-outline1:hover{
+    background-color:#000181;
+  color:#FFFFFF !important;
+}
+
+
 form button:hover {
   background: #000181;
   color: #fff;
@@ -1350,9 +1370,9 @@ ul.nav-links.navbar-nav.ms-auto.mb-2.mb-lg-0 {
 
 
 .service-list li.active {
-  color: #00B2E9;       /* highlight color */
+  color: #000181;       /* highlight color */
   font-weight: 700;
-  border-left: 3px solid #00B2E9;
+  border-left: 3px solid #000181;
   padding-left: 10px;
   transition: 0.3s;
 }
@@ -2054,6 +2074,7 @@ div#navbarContent {
   }
 
 }
+
 
 
 
