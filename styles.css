@@ -426,7 +426,7 @@ span a {
   border-radius: 8px;
 }
 
-
+/* 
 .circle {
   background: #343654; /* dark navy circle */
   width: 400px;
@@ -459,15 +459,15 @@ span a {
   0%   { transform: scale(0); opacity: 0; }
   50%  { transform: scale(1); opacity: 1; }
   100% { transform: scale(0); opacity: 0; }
-} */
+} 
 
-/* Delay for ripple effect */
+
 .dot:nth-child(3n) { animation-delay: 0.2s; }
 .dot:nth-child(4n) { animation-delay: 0.5s; }
-.dot:nth-child(5n) { animation-delay: 0.8s; }
+.dot:nth-child(5n) { animation-delay: 0.8s; }*/
 
 .diamond-circle {
-  background: #343654; /* dark navy */
+  background: #343654; 
   width: 400px;
   height: 400px;
   border-radius: 50%;
@@ -477,7 +477,45 @@ span a {
   margin: auto;
   overflow: hidden;
   border:1px solid #FFFFFF1A;
+} 
+ .circle {
+  background: #343654; /* dark navy circle */
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border:1px solid #FFFFFF1A;
 }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 5px;
+}
+
+.dot {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: white;
+  transform: scale(0);
+  opacity: 0;
+  animation: flowerBlink 2s infinite ease-in-out;
+}
+
+/* Open → Close → Open */
+@keyframes flowerBlink {
+  0%   { transform: scale(0); opacity: 0; }
+  50%  { transform: scale(1); opacity: 1; }
+  100% { transform: scale(0); opacity: 0; }
+}
+
+/* Delay for ripple effect */
+.dot:nth-child(3n) { animation-delay: 0.2s; }
+.dot:nth-child(4n) { animation-delay: 0.5s; }
+.dot:nth-child(5n) { animation-delay: 0.8s; }
 
 .diamond-grid {
   display: grid;
@@ -1034,15 +1072,19 @@ a.info-btn-outline1 {
     z-index: 99;
   }
   .btn-outline {
-    width: 100%;
+    display: flex;
+    
     justify-content: center;
   }
 .hero-left {
     flex-direction: column; 
     align-items: flex-start;
     justify-content: flex-start;
-    padding-top: 140px;
+    padding-top: 40px;
      gap: 0px;
+}
+.hero-heading h1{
+  font-size: 3%;
 }
 
 .hero-right img {
@@ -1060,7 +1102,7 @@ div#navbarContent {
     text-align: center;
   }
   .hero-heading h1 {
-    font-size: 36px;
+    font-size: 35px !important;
     text-align: center;
   }
     .team-heading h1 {
@@ -1131,7 +1173,7 @@ div#navbarContent {
 }
 .cta-heading {
     font-weight: 700;
-    font-size: 24px;
+    font-size: 28px;
     line-height: 29px;
     letter-spacing: 0;
     color: #002984;
@@ -1157,7 +1199,7 @@ div#navbarContent {
 }
 .contact-subtext {
     font-weight: 500;
-    font-size: 20px;
+    font-size: 18px;
     text-align: center;
     color: #333;
 }
@@ -1346,16 +1388,18 @@ ul.nav-links.navbar-nav.ms-auto.mb-2.mb-lg-0 {
 }
 .hero-bottom p{
   text-align: center !important;
+  font-size: 16px;
 }
 .team-bottom p{
   text-align: center !important;
+  font-size: 16px;
 }
 .finance-section {
    padding: 25px 10px !important;
   
 }
 .finance-section h2 {
-    font-size: 38px !important;
+    font-size: 32px !important;
     line-height: 42px !important;
     font-weight: bold;
 }
@@ -1368,6 +1412,9 @@ ul.nav-links.navbar-nav.ms-auto.mb-2.mb-lg-0 {
        font-size: 18px !important;
   line-height: 24px !important ;
     }
+     .col-md-5 p {
+    text-align: center;
+}
 }
 
 
@@ -1992,7 +2039,7 @@ div#navbarContent {
     font-size: 28px;
   }
   .snj-desc {
-    font-size: 14px;
+    font-size: 16px;
   }
   .snj-subtitle{
     font-size: 18px;

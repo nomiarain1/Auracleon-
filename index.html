@@ -22,7 +22,69 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
   <link rel="stylesheet" href="styles.css">
+<style>
+@media (max-width: 768px) {
+.main-navbar .nav-links li a
+ {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 20px;
+    transition: 0.3s;
+}
+.main-navbar .navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: #fff;
+}
 
+button.navbar-toggler {
+    background: #001F5B;
+}
+.btn-outline{
+  margin-bottom: 0px !important;
+  margin-left: 85px;
+}
+.info-left p {
+        font-size: 18px;
+        color: #ffffff;
+        text-align: center;
+    }
+    .info-right h2 {
+        font-size: 28px;
+        color: #ffffff;
+        font-weight: 700;
+        line-height: 1.2;
+        text-align: center;
+        margin-top: 10px;
+    }
+    .info-right p {
+      font-size: 18px;
+      color: #ffffff;
+      text-align: center;
+    }
+    .services-right p{
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 25px;
+    }
+    .service-list li{
+      font-size: 20px;
+      margin: 16px 0;
+    }
+    .info-left p{
+      font-size: 16px !important;
+    }
+    .col-md-5 p {
+    text-align: center;
+}
+.hero-heading h1{
+  font-size: 65px;
+}
+.btn-outline{
+  margin-bottom: 150px;
+}
+}
+
+
+</style>
 </head>
 <body>
   <!-- Navbar -->
@@ -59,12 +121,12 @@
       <!-- Left Column -->
       <div class="col hero-left">
         <div class="hero-heading">
-          <h1 style="font-size:65px;">Where Technology Meets Measurable Impact.
+          <h1>Where Technology Meets Measurable Impact.
 </h1>
         </div>
         <div class="hero-bottom">
           <p>We help GCC enterprises launch digital products that perform at scale — built on strategy, discipline, and engineering excellence.</p>
-          <a href="#contact" class="btn-outline" style="margin-bottom:150px;">
+          <a href="#contact" class="btn-outline" >
       Contact us
       <img class="btn-icon hero-icon " src="./assets/arrow-right-double-1.svg" alt="">
     </a>
@@ -130,7 +192,7 @@ At Auracleon, we build and manage reliable digital products for GCC enterprises 
           <img class="btn-icon" src="./assets/arrow-right-double-1.svg" alt="">
         </a>
         </div>
-        <div class="l-img d-flex justify-content-center align-items-center ">
+       <div class="l-img d-flex justify-content-center align-items-center ">
          <div class="diamond-circle">
     <div class="diamond-grid">
       <script>
@@ -579,7 +641,7 @@ Fill out the form below, and one of our specialists will get in touch to discuss
   });
 </script> -->
 
-<script>
+<!-- <script>
   const tabs = document.querySelectorAll('#serviceTabs li');
   const contents = document.querySelectorAll('.service-content');
 
@@ -615,6 +677,40 @@ Fill out the form below, and one of our specialists will get in touch to discuss
 
       // Save active tab in localStorage
       localStorage.setItem('activeServiceTab', tab.dataset.tab);
+    });
+  });
+</script> -->
+<script>
+  const tabs = document.querySelectorAll('#serviceTabs li');
+  const contents = document.querySelectorAll('.service-content');
+
+  // Always set "Product & Delivery" tab as default
+  const defaultTab = 'ecommerce'; // 👈 this is the id of your first tab content
+
+  // Remove all active classes
+  tabs.forEach(t => t.classList.remove('active'));
+  contents.forEach(c => c.classList.remove('active'));
+
+  // Activate the default tab & content
+  const activeTab = document.querySelector(`#serviceTabs li[data-tab="${defaultTab}"]`);
+  const activeContent = document.getElementById(defaultTab);
+
+  if (activeTab && activeContent) {
+    activeTab.classList.add('active');
+    activeContent.classList.add('active');
+  }
+
+  // Add click events to tabs
+  tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      // Remove active from all
+      tabs.forEach(t => t.classList.remove('active'));
+      contents.forEach(c => c.classList.remove('active'));
+
+      // Add active to clicked tab & its content
+      tab.classList.add('active');
+      const target = document.getElementById(tab.dataset.tab);
+      target.classList.add('active');
     });
   });
 </script>
