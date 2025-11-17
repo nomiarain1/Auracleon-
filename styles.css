@@ -812,8 +812,8 @@ span a {
 }
 .contact-left1{
   padding-right: 0px;
-  padding-top: 0px;
-  border-right:3px solid #1D2041;
+  padding: 20px;
+  border-right:none !important;
 }
 .contact-right1{
   padding-top: 80px;
@@ -1181,11 +1181,14 @@ div#navbarContent {
 .cta-section {
     height: 100%; 
     padding:60px 0 60px 0 ;
-    background-image: url(./assets/bg.png);
+    background-image: url('./assets/blue-wavy-background 1.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-color: transparent;
+}
+.side-divider{
+  display: none !important;
 }
 .con1 {
     padding-bottom: 10px;
