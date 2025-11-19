@@ -138,63 +138,81 @@ Fill out the form below, and our team will reach out to explore how your skills 
     <!-- Right Column -->
     <div class="col-md-7 contact-right1 p-4" id="contact">
 
-  <form>
+<form action="https://formsubmit.co/YOUR_EMAIL_HERE" method="POST" enctype="multipart/form-data">
+
     <div class="row mb-3">
       <div class="col-md-6">
         <label class="form-label">First Name</label>
-        <input type="text" class="form-control" placeholder="Enter your name">
+        <input type="text" name="first_name" class="form-control" placeholder="Enter your name" required>
       </div>
       <div class="col-md-6">
         <label class="form-label">Last Name</label>
-        <input type="text" class="form-control" placeholder="Enter your name">
+        <input type="text" name="last_name" class="form-control" placeholder="Enter your name" required>
       </div>
     </div>
 
     <div class="mb-3">
       <label class="form-label">Phone number</label>
-      <input id="phone" type="tel" class="form-control" placeholder="">
+      <input id="phone" name="phone" type="tel" class="form-control">
     </div>
 
     <div class="mb-3">
       <label class="form-label">Email</label>
-      <input type="email" class="form-control" placeholder="Enter your email">
+      <input type="email" name="email" class="form-control" placeholder="Enter your email" required>
     </div>
 
-      <div class="mb-3">
+    <div class="mb-3">
       <label class="form-label">Role of interest</label>
-      <input type="text" class="form-control" placeholder="Enter your role of interest">
+      <input type="text" name="role" class="form-control" placeholder="Enter your role of interest">
     </div>
 
     <div class="mb-3">
       <label class="form-label">Location</label>
-      <input type="text" class="form-control" placeholder="Enter your location">
+      <input type="text" name="location" class="form-control" placeholder="Enter your location">
     </div>
+
     <div class="mb-3">
-  <label class="form-label" style="font-weight:600;">Portfolio/CV upload</label>
-  <div class="upload-box" onclick="document.getElementById('fileInput').click()">
-    <p class="upload-text">Drag and drop file here to upload</p>
-    <p style="font-size:13px; color:#999;">Maximum file size 5MB. Accepted formats: .docx, .pdf, .png, .jpg</p>
-    <button type="button" class="browse-btn">Browse Files</button>
-    <input type="file" id="fileInput" class="form-control" />
-  </div>
-</div>
+      <label class="form-label" style="font-weight:600;">Portfolio/CV upload</label>
+      <div class="upload-box" onclick="document.getElementById('fileInput').click()">
+        <p class="upload-text">Drag and drop file here to upload</p>
+        <p style="font-size:13px; color:#999;">Maximum file size 5MB. Accepted formats: .docx, .pdf, .png, .jpg</p>
+        <button type="button" class="browse-btn">Browse Files</button>
+
+        <!-- File input -->
+        <input type="file" id="fileInput" name="file_name" class="form-control" onchange="updateFileName()" />
+      </div>
+    </div>
 
     <div class="mb-3">
       <label class="form-label">Message</label>
-      <textarea class="form-control" rows="4" placeholder=""></textarea>
+      <textarea class="form-control" name="message" rows="4" placeholder=""></textarea>
     </div>
 
-    <a href="#" type="submit" class="info-btn-outline1">
+    <!-- REDIRECT TO YOUR LINK -->
+    <input type="hidden" name="_next" value="https://auracleon.vercel.app">
+
+    <!-- Disable captcha -->
+    <input type="hidden" name="_captcha" value="false">
+
+    <button type="submit" class="info-btn-outline1">
       Send
       <img class="btn-icon" src="./assets/arrow-right-double (1).svg" alt="">
-    </a>
-  </form>
+    </button>
+
+</form>
     </div>
   </div>
 </div>
 
 </section>
-
+<script>
+function updateFileName() {
+  const input = document.getElementById('fileInput');
+  if (input.files.length > 0) {
+    input.setAttribute("data-file", input.files[0].name);
+  }
+}
+</script>
 <footer class="footer">
   <div class="container">
   <div class="row">
@@ -357,6 +375,7 @@ fadeEls.forEach(el => observer.observe(el));
 </body>
 
 </html>
+
 
 
 
