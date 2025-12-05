@@ -40,9 +40,11 @@ button.navbar-toggler {
 }
 .btn-outline{
   margin-bottom: 0px !important;
-  margin-left: 85px;
+  margin-left: 35%;
 }
+
 .info-left p {
+ max-width: 100% !important;
         font-size: 18px;
         color: #ffffff;
         text-align: center;
@@ -56,12 +58,12 @@ button.navbar-toggler {
         margin-top: 10px;
     }
     .info-right p {
-      font-size: 18px;
+      font-size: 16px;
       color: #ffffff;
       text-align: center;
     }
     .services-right p{
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.7;
     margin-bottom: 25px;
     }
@@ -73,7 +75,7 @@ button.navbar-toggler {
       font-size: 16px !important;
     }
     .col-md-5 p {
-    text-align: center;
+    text-align: left !important;
 }
 .hero-heading h1{
   font-size: 65px;
@@ -83,7 +85,28 @@ button.navbar-toggler {
 }
 }
 
-
+  @media (max-width: 428px) {
+   .footer .left-heading {
+    text-align: center;
+}
+.team_hero {
+    background-color: #1D2041;
+    height: 300px !important;
+    padding-top: 0 !important;
+}
+.col-md-5 p {
+        text-align: center !important;
+    }
+    .footer .label-text{
+      text-align: center;
+    }
+    .footer .value-text{
+      text-align: center;
+    }
+        .btn-outline {
+        margin-bottom: 0px !important;
+        margin-left: 24%;}
+  }
 </style>
 </head>
 <body>
@@ -93,7 +116,7 @@ button.navbar-toggler {
     <div class="container-fluid nav-container">
       <div class="logo">
         <a href="index.html">
-        <img src="./assets/Frame 694.png" alt="Auracleon Logo">
+        <img src="./assets/home-logo.svg" alt="Auracleon Logo">
         </a>
       </div>
 
@@ -235,7 +258,7 @@ At Auracleon, we build and manage reliable digital products for GCC enterprises 
     <h2>Our Process  </h2>
         <p>
           
-Discover → Plan → Build → Launch → Operate
+Discover → Plan → Build → Launch → Operate.
 We work in transparent cycles with weekly demos, monthly performance reports, and a single accountable delivery owner.
         </p>  
 
@@ -305,6 +328,7 @@ At Auracleon, we envision a world where every business challenge becomes an oppo
           <li data-tab="sports">Cloud & Data</li>
           <li data-tab="health">Security & Compliance</li>
           <li data-tab="managed">Managed Services</li>
+          <li data-tab="consultancy"> Consultancy Services</li>
         </ul>
       </div>
 
@@ -315,7 +339,7 @@ At Auracleon, we envision a world where every business challenge becomes an oppo
         <div class="service-content active" id="ecommerce">
           <p>
 We help businesses define strategy, design experiences, and deliver digital products that scale — from idea to launch.       </p>
- <a href="./services.html" class="btn-outline" >
+ <a href="./services.html#product-delivery" class="btn-outline" >
       Read More
       <img class="btn-icon hero-icon " src="./assets/arrow-right-double-1.svg" alt="">
     </a>
@@ -326,7 +350,7 @@ We help businesses define strategy, design experiences, and deliver digital prod
           <p>
 We build reliable, high-performance digital systems and cloud infrastructures that enable speed, security, and scalability.
           </p>
-          <a href="./services.html" class="btn-outline" >
+          <a href="./services.html#engineering" class="btn-outline" >
       Read More
       <img class="btn-icon hero-icon " src="./assets/arrow-right-double-1.svg" alt="">
     </a>
@@ -337,7 +361,7 @@ We build reliable, high-performance digital systems and cloud infrastructures th
           <p>
 We design and manage cloud ecosystems that drive performance, visibility, and data-driven decisions.
           </p>
-         <a href="./services.html" class="btn-outline" >
+         <a href="./services.html#cloud-data" class="btn-outline" >
       Read More
       <img class="btn-icon hero-icon " src="./assets/arrow-right-double-1.svg" alt="">
     </a>
@@ -346,8 +370,7 @@ We design and manage cloud ecosystems that drive performance, visibility, and da
         <!-- Healthcare -->
         <div class="service-content" id="health">
           <p>
-We strengthen your digital foundation with enterprise-grade security, identity management, and audit-ready compliance.          </p>
-         <a href="./services.html" class="btn-outline" >
+         <a href="./services.html#security-compliance" class="btn-outline" >
       Read More
       <img class="btn-icon hero-icon " src="./assets/arrow-right-double-1.svg" alt="">
     </a>
@@ -356,11 +379,20 @@ We strengthen your digital foundation with enterprise-grade security, identity m
         <div class="service-content" id="managed">
           <p>
 We keep your systems running smoothly with proactive monitoring, incident response, and measurable uptime performance.          </p>
-          <a href="./services.html" class="btn-outline" >
+          <a href="./services.html#managed-services" class="btn-outline" >
       Read More
       <img class="btn-icon hero-icon " src="./assets/arrow-right-double-1.svg" alt="">
     </a>
         </div>
+                     <!--  Consultancy Services -->
+         <div class="service-content" id="consultancy">
+          <p>
+We keep your systems running smoothly with proactive monitoring, incident response, and measurable uptime performance.          </p>
+          <a href="./services.html#consultancy-services" class="btn-outline" >
+      Read More
+      <img class="btn-icon hero-icon " src="./assets/arrow-right-double-1.svg" alt="">
+    </a>
+        
     </div>
   </div>
 </section>

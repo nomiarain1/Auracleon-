@@ -23,24 +23,96 @@
 <link rel="stylesheet" href="./styles.css">
 
 <style>
+  @media (max-width: 428px) {
+   .footer .left-heading {
+    text-align: center;
+}
+.team_hero {
+    background-color: #1D2041;
+    height: 300px !important;
+    padding-top: 0 !important;
+}
+.col-md-5 p {
+        text-align: center !important;
+    }
+    .footer .label-text{
+      text-align: center;
+    }
+    .footer .value-text{
+      text-align: center;
+    }
+  }
   @media (max-width: 768px) {
     .col.team_hero-right {
-        margin-top: -200px !important;
-        margin-left: 20px;
-        z-index: -1;
-        transform: rotate(-79deg);
+        display: none;
     }
     .custom-section-1{
       height: auto;
     }
     .col-md-5 p {
-    text-align: center;
+    text-align: left;
 }
 .services-left p
  {
     font-size: 16px;
 }
+/* .industry-card.fade-up.show img
+ {
+  width: 70px;
+    height: 50px;
+} */
+ .fade-up1{
+  width: 70px;
+  height: 70px;
 }
+.fade-up2{
+  width: 72px !important;
+  height: 72px !important;
+}
+.fade-up3{
+  width: 90px !important;
+  height: 90px !important;
+}
+.fade-up4{
+  width: 69px !important;
+  height: 70px !important;
+}
+.fade-up5{
+  width: 70px !important;
+  height: 61px !important;
+}
+.industry-card img{
+  margin-left: 10px;
+}
+.industry-card h4 {
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0;
+    color: #1a1a1a;
+}
+}
+
+.fade-up1{
+  width: 100px;
+  height: 100px;
+}
+.fade-up2{
+  width: 102px;
+  height: 102px;
+}
+.fade-up3{
+  width: 120px;
+  height: 120px;
+}
+.fade-up4{
+  width: 99px;
+  height: 100px;
+}
+.fade-up5{
+  width: 100px;
+  height: 91px;
+}
+
 </style>
 
 </head>
@@ -50,7 +122,7 @@
     <div class="container-fluid nav-container">
       <div class="logo">
         <a href="index.html">
-        <img src="./assets/Logo.png" alt="Auracleon Logo">
+        <img src="./assets/Logo.svg" alt="Auracleon Logo">
         </a>
       </div>
 
@@ -100,49 +172,61 @@
     <div class="row">
 
       <div class="col-md-4">
-        <div class="industry-card ">
-          <div>
-            <h4>Product & Delivery</h4>
-          </div>
-          <img src="./assets/9.png" width="100px" height="100px" class="fade-up" alt="Banking Icon">
-        </div>
+       <a href="#product-delivery" class="industry-card">
+  <div>
+    <h4>Product & Delivery</h4>
+  </div>
+  <img src="./assets/9.png" class="fade-up1">
+</a>
       </div>
 
       <div class="col-md-4">
-        <div class="industry-card fade-up">
-          <div>
-            <h4>Engineering</h4>
-            <p></p>
-          </div>
-          <img src="./assets/10.png" width="102px" height="102px" class="fade-up" alt="Government Icon">
-        </div>
+        <a href="#engineering" class="industry-card">
+  <div>
+    <h4>Engineering</h4>
+  </div>
+  <img src="./assets/10.png" class="fade-up2">
+</a>
+
       </div>
 
       <div class="col-md-4">
-        <div class="industry-card fade-up">
-          <div>
-            <h4>Cloud & Data</h4>
-          </div>
-          <img src="./assets/11.png" width="125px" height="105px" class="fade-up" alt="Healthcare Icon">
-        </div>
+       <a href="#cloud-data" class="industry-card">
+  <div>
+    <h4>Cloud & Data</h4>
+  </div>
+  <img src="./assets/11.png" class="fade-up3">
+</a>
+
       </div>
 
       <div class="col-md-4 fade-up">
-        <div class="industry-card">
-          <div>
-            <h4>Security & Compliance</h4>
-          </div>
-          <img src="./assets/12.png" width="99px" height="120px" class="fade-up" alt="Retail Icon">
-        </div>
+        <a href="#security-compliance" class="industry-card">
+  <div>
+    <h4>Security & Compliance</h4>
+  </div>
+  <img src="./assets/12.png" class="fade-up4">
+</a>
+
       </div>
 
       <div class="col-md-4 fade-up">
-        <div class="industry-card">
-          <div>
-            <h4>Managed Services </h4>
-          </div>
-          <img src="./assets/13.png" width="100px" height="91px" class="fade-up" alt="Real Estate Icon">
-        </div>
+        <a href="#managed-services" class="industry-card">
+  <div>
+    <h4>Managed Services</h4>
+  </div>
+  <img src="./assets/13.png" class="fade-up5">
+</a>
+
+      </div>
+       <div class="col-md-4 fade-up">
+        <a href="#consultancy-services" class="industry-card">
+  <div>
+    <h4>Consultancy Services</h4>
+  </div>
+  <img src="./assets/grop.png" class="fade-up5">
+</a>
+
       </div>
 <!-- 
       <div class="col-md-4 fade-up">
@@ -159,7 +243,7 @@
 </section>
 <!-- ===== Industries Section End ===== -->
 
-<section class="finance-section">
+<section id="product-delivery" class="finance-section">
     <div class="container">
       <div class="row align-items-center">
         <!-- Text Content -->
@@ -187,7 +271,7 @@
     </div>
   </section>
 
-<section class="finance-section">
+<section id="engineering" class="finance-section">
     <div class="container">
       <div class="row align-items-center">
         <!-- Text Content -->
@@ -209,7 +293,7 @@
     </div>
   </section>
 
-<section class="finance-section">
+<section id="cloud-data" class="finance-section">
     <div class="container">
       <div class="row align-items-center">
         <!-- Text Content -->
@@ -236,7 +320,7 @@
     </div>
   </section>
 
-<section class="finance-section">
+<section id="security-compliance" class="finance-section">
     <div class="container">
       <div class="row align-items-center">
         <!-- Text Content -->
@@ -262,7 +346,7 @@
     </div>
   </section>
 
-<section class="finance-section">
+<section id="managed-services" class="finance-section">
     <div class="container">
       <div class="row align-items-center">
         <!-- Text Content -->
@@ -281,6 +365,30 @@
         <!-- Image -->
         <div class="col-md-6 text-center service-img">
           <img src="./assets/Managed Services.jpg" alt="Finance Image">
+        </div>
+      </div>
+    </div>
+  </section>
+
+<section id="consultancy-services" class="finance-section">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Text Content -->
+        <div class="col-md-6 mb-4">
+          <h2>Consultancy Services</h2>
+          <!-- <p>We translate your values into distinctive visual identities that resonate with audiences and create immediate recognition.</p> -->
+          <ul>
+            <li><b>Digital Strategy :</b>Define clear technology roadmaps that align business goals with scalable, modern solutions.</li>
+            <li><b>Process Optimization :</b>Streamline workflows and eliminate inefficiencies to accelerate delivery and reduce operational overhead.</li>
+            <li><b>Technology Advisory :</b>  Provide expert recommendations on tools, platforms, and architectures that best support product growth.</li>
+            <li><b>Product Consultation :</b> Guide teams on prioritization, feature planning, and value-driven decision-making.</li>
+            <li><b>Delivery Excellence :</b>Strengthen execution frameworks through best practices in Agile, DevOps, and cross-functional collaboration."
+</li>
+          </ul>
+        </div>
+        <!-- Image -->
+        <div class="col-md-6 text-center service-img">
+          <img src="./assets/main.svg" alt="Finance Image">
         </div>
       </div>
     </div>

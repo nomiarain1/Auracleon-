@@ -93,7 +93,7 @@ header.team-navbar.navbar.navbar-expand-lg {
 .btn-outline {
   border: 1px solid #1D2041;
   padding: 12px 15px;
-width:190px;
+  width:190px;
   text-decoration: none;
   color: #1D2041;
   font-size: 20px;
@@ -391,7 +391,6 @@ span a {
 .info-right  p {
   font-size: 24px;
   color:#FFFFFF;
-  max-width: 600px;
 }
 .info-btn-outline{
   border: 1px solid #FFFFFF;
@@ -426,7 +425,7 @@ span a {
   border-radius: 8px;
 }
 
-/* 
+
 .circle {
   background: #343654; /* dark navy circle */
   width: 400px;
@@ -1049,11 +1048,25 @@ form button:hover {
     overflow-x: hidden !important;
   }
   .contact-heading1 {
-    text-align: center;
+    text-align: left;
    
 }
 a.info-btn-outline1 {
     gap: 18px;
+}
+.team-bottom p {
+justify-self: center;
+  margin-bottom: 20px;
+  font-size: 20px;
+  color:#ffffff;
+}
+.team_hero{
+  height: none !important;
+  padding-top: 150px;
+  padding-bottom: 200px;
+}
+.industry-card{
+  padding: 10px;
 }
   /* Navbar */
   .navbar .container-fluid {
@@ -1124,7 +1137,7 @@ div#navbarContent {
   }
   .info-left h2 {
     font-size: 28px;
-    color: #1D2041;
+    color: #fff;
     font-weight: 700;
     line-height: 1.2;
     text-align: center;
@@ -1150,8 +1163,7 @@ div#navbarContent {
  .info-right p {
     font-size: 18px;
     color: #1D2041;
-    text-align: center;
-    
+    text-align: center;   
 }
 .contact-right1 {
     padding-top: 0px; 
@@ -1219,7 +1231,7 @@ div#navbarContent {
     justify-content: center !important;
 }
 .py-5 {
-    padding-top: 0rem !important;
+    padding-top: 5rem !important;
     padding-bottom: 0rem !important;
 }
 .starburst-anim-container{
@@ -1265,13 +1277,13 @@ div#navbarContent {
     .footer .left-heading {
     font-weight: 600;
     font-size: 24px;
-    text-align: center;
+    text-align: left;
     margin-bottom: 30px;
 }
 .footer .label-text {
     font-weight: 400;
     font-size: 16px;
-    text-align: center;
+    text-align: left;
     line-height: 100%;
     margin-bottom: 6px;
 }
@@ -1279,7 +1291,7 @@ div#navbarContent {
     font-weight: 300;
     font-size: 14px;
     margin-bottom: 10px;
-    text-align: center;
+    text-align: left;
 }
 
   .footer .footer-col {

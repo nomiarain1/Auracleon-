@@ -27,7 +27,12 @@
 
 <style>
   @media (max-width: 768px) {
+    .custom-section-1 .last-col {
+    margin-top: 60px;
+    margin-left: 0px; 
+}
     .col.team_hero-right {
+      display: none !important;
         margin-top: -200px !important;
         margin-left: 20px;
         z-index: -1;
@@ -37,9 +42,28 @@
       height: auto;
     }
     .col-md-5 p {
+    text-align: left;
+}
+}
+  @media (max-width: 428px) {
+   .footer .left-heading {
     text-align: center;
 }
+.team_hero {
+    background-color: #1D2041;
+    height: 300px !important;
+    padding-top: 0 !important;
 }
+.col-md-5 p {
+        text-align: center !important;
+    }
+    .footer .label-text{
+      text-align: center;
+    }
+    .footer .value-text{
+      text-align: center;
+    }
+  }
 </style>
 </head>
 <body>
