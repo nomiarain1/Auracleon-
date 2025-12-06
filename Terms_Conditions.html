@@ -23,25 +23,43 @@
 
   <link rel="stylesheet" href="styles.css">
 
-  <style>
+<style>
   @media (max-width: 768px) {
-    .col.team_hero-right {
-        margin-top: -200px !important;
-        margin-left: 20px;
-        z-index: -1;
-        transform: rotate(-79deg);
-    }
-    .custom-section-1{
-      height: auto;
-    }
+  .team-bottom {
+    display: flex;
+    justify-content: center;
+}
+.team_hero
+ {
+    background-color: #1D2041;
+    height: 300px !important;
+    padding-top: 0;
+}
+.col.team_hero-right {
+  display: none;
+    margin-top: -138px; 
+}
+  }
+  @media (max-width: 768px) {
     .col-md-5 p {
+    text-align: left !important;
+}
+}
+
+  @media (max-width: 428px) {
+   .footer .left-heading {
     text-align: center;
 }
-.services-left p
- {
-    font-size: 16px;
-}
-}
+.col-md-5 p {
+        text-align: center !important;
+    }
+    .footer .label-text{
+      text-align: center;
+    }
+    .footer .value-text{
+      text-align: center;
+    }
+       }
 </style>
 </head>
 <body>
@@ -50,7 +68,7 @@
     <div class="container-fluid nav-container">
       <div class="logo">
         <a href="index.html">
-        <img src="./assets/Logo.png" alt="Auracleon Logo">
+        <img src="./assets/Logo.svg" alt="Auracleon Logo">
         </a>
       </div>
 

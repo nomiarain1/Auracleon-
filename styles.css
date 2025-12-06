@@ -1266,6 +1266,11 @@ div#navbarContent {
   }
 
  /* Footer: 2x2 grid layout */
+ .footer .footer-col h5{
+  text-align: left;
+  margin-bottom: 0 !important;
+  margin-top: 10px;
+ }
   .footer .footer-col a {
       font-weight: 300;
       font-size: 13px !important;
@@ -1273,6 +1278,7 @@ div#navbarContent {
       display: block;
       color: #ddd;
       text-decoration: none;
+      text-align: left;
     }
     .footer .left-heading {
     font-weight: 600;
@@ -1301,7 +1307,7 @@ div#navbarContent {
   }
 .footer .footer-col {
     border-left: 0px solid #fff;
-    padding-left: 06px;
+    padding-left: 15px;
 }
   /* Left info column center ho jaye */
   .footer .col-md-4 {
@@ -1347,10 +1353,11 @@ div#navbarContent {
   .grid {
     transform: scale(0.6);
   }
-
-  .info-btn-outline {
-    font-size: 14px;
-    padding: 8px 18px;
+.footer .footer-col h5 {
+   text-align: center;
+  }
+  .footer .footer-col a{
+    text-align: center;
   }
 }
 
@@ -1913,9 +1920,13 @@ div#navbarContent {
   z-index: -5;
   margin-top: -60px;
 }
-
+@media (max-width: 915px) {
+.col.team_hero-right{
+    display: none !important;
+}
+}
 .cs1-img{
-  margin-bottom: 150px;
+  margin-bottom: 90px;
 }
 .custom-section-1 .cs1-heading {
   font-family: 'Readex Pro', sans-serif;

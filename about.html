@@ -26,7 +26,49 @@
 
 
 <style>
+@media (max-width: 866px) {
+  .cs2-img{
+    width: 150px;
+    height: 150px;
+  }
+  
+  .cs1-img {
+     width: 150px;
+    height: 150px;
+  }
+  img.cs1-img.dsk-img{
+    display: none;
+  }
+  .custom-section-1 .cs1-col {
+   
+    padding-top: 0px;
+    padding-right: 20px;
+    padding-left: 60px;
+}
+
+  .custom-section-1 .center-col {
+    display: none !important;
+  }
+}
+
+
   @media (max-width: 768px) {
+    .custom-section-1 .cs1-col{
+      padding-left: 1px !important;
+      margin-top: 5px !important;
+    }
+    .snj-vision-box::before{
+      display: none !important;
+    }
+        .cs1-img {
+        margin: none !important;
+        width: 150px;
+        height: 150px;
+        display: flex;
+    }
+    .snj-mission-box::after{
+      display: none !important;
+    }
     .custom-section-1 .last-col {
     margin-top: 60px;
     margin-left: 0px; 
@@ -72,7 +114,7 @@
     <div class="container-fluid nav-container">
       <div class="logo">
         <a href="index.html">
-        <img src="./assets/Logo.png" alt="Auracleon Logo">
+        <img src="./assets/Logo.svg" alt="Auracleon Logo">
         </a>
       </div>
 
